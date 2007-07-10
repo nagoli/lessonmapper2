@@ -1,0 +1,53 @@
+#summary One-sentence summary of this page.
+= Overview of LessonMapper2 =
+LessonMapper2 (LM2) is our current project of interface for building lessons as graphs of educational material.
+
+[[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/genr.png,alt=Graph Example,width=400)]]
+
+== Interface ==
+LM2 is based on a zoomable interface (developed with the Piccolo toolkit for Java). In a lesson graph, nodes can be (1) documents of any type or (2) nested lesson graphs.
+
+ . In the first case, the node is decorated with a screenshot of the associated document and double-clicking on the node open its associated document (if the used OS is able to open it).
+ . In the second case, the node is decorated with a preview of the graph it contains. When double clicking on the node, the inner graph is zoomed in and adjusted to fit to the display size. The right part of the screen shows a synoptic view of the level directly upper to the current one. Clicking on this view makes the zoom back on the upper level.
+http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/droppedImage.jpg    [[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/scrshot.png,alt=Two linked nodes,width=300)]]    [[ImageLink(http://www.dcc.uchile.cl/~omotelet/resources/nestedGraph.jpg,alt=Two linked nodes,width=500)]]
+
+[http://reflex.dcc.uchile.cl/lm/lessonMapper2/lm2Zoom.mov Zoomable Interface Demo] 
+
+== Metadata ==
+In LM2, lessons are built as graphs of educational resources along with their metadata: Each node of the lesson graph is considered as a learning object (LO) and is associated with a set of metadata (LOM).
+
+Metadata are used to visually characterize the graph nodes. 
+
+[[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/characteristics-1.jpg,alt=Metadata characteristics of an node,width=400)]]
+
+LM2 features the LOM edition. Edition is done  in a floating window. Edited metadata attributes can be chosen among the LOM attribute list. LOM RDF is used to defined vocabulary for the attributes.
+
+|| [[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/metadata.png,alt=Two linked nodes,width=400)]] || [[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/choose.png,ComboBox for defining LOM metadata  alt=,width=400)]] ||
+
+LM2 offers the possibility to edit a same attribute for several LOs in the same time.
+
+[[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/language-1.jpg,alt= Simultaneous LOM Edition, width=400)]]
+
+Similarly, it is possible to edit the LOM attributes of one LO in comparison with other  LOs. This may be particularly useful with subjective attributes, like the difficulty or the semantic density, which does not have sense when isolated.
+
+[[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/comparison-1.jpg,alt= LOM Edition in Comparison, width=400)]]
+
+== LOM Generation Support ==
+
+LOM Generation is supported by an automatic system inferring a set of suggestions and restrictions for the probable metadata values of a learning object. Suggestions are weighted: more a suggestion as a good probability to be pertinent, bigger is its font size. Suggestions that do not comply with the restrictions for a certain attribute are painted in red.
+
+[[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/cloud-1.jpg,alt = LOM Generation Support,width=400)]]
+
+LOM Validation is omnipresent in lesson graphs built with LM2: each LO has a tricolor bar painted on its upper left edge that represent the validation state of the LO, i.e. the proportions of invalid, undefined, and not invalid LOM attribute values characterizing this LO.
+
+[[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/validation-1.jpg,alt = LOM Validation Support,width=400)]]
+
+== LO Sharing Integration ==
+LM2 permits to have a seamless access to a repository of learning objects (current implementation considers the use of an eXist database instance used as LO repository). All the nodes of the graph (independently of their granularity level) can be stored on the repository in one click. Validation checking avoids to share educational resources with incomplete metadata (feature in development).
+
+[[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/droppedImage_3.png, alt=One Click Sharing of LOs,width=400)]]
+
+== LO Retrieval Integration ==
+Moreover, the repository can be queried directly from the lesson graph: a node without associated material is a query node. When double-clicking on a query node, the title of this node is used to search for matching terms in all the metadata of the repository LOs. Each result can be previewed, i.e., the associated LO is opened on the user desktop, and/or adopted, i.e. that the LO and LOM of the result replace those of the query node.
+
+[[ImageLink(http://www.dcc.uchile.cl/~omotelet/LessonMapper2_files/query.jpg, alt=One Click Query in LM2,width=400)]]
