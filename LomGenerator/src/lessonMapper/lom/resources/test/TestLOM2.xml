@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd">
+    <general>
+        <identifier>LOMTest2</identifier>
+        <title>
+            <langstring xml:lang="en">LOMTest2</langstring>
+        </title>
+        <keyword>
+            <langstring xml:lang="en">Test2Un,Test2Deux</langstring>
+        </keyword>
+    </general>
+
+    <technical>
+        <format></format>
+        <size>2</size>
+    </technical>
+    <relation>
+        <kind>
+            <source>
+                <langstring xml:lang="en">LOMv1.0</langstring>
+            </source>
+            <value>
+                <langstring xml:lang="x-none">ispartof</langstring>
+            </value>
+        </kind>
+        <resource>
+            <description>
+                <langstring xml:lang="en"></langstring>
+            </description>
+            <catalogentry>
+                <catalog></catalog>
+                <entry>
+                    <langstring xml:lang="en">LOMTest1</langstring>
+                </entry>
+            </catalogentry>
+        </resource>
+    </relation>
+
+
+</lom>
+

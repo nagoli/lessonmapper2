@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+     xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+     xmlns:lom_meta="http://www.imsproject.org/rdf/imsmd_metametadatav1p2#">
+
+  <rdfs:Class rdf:ID="MetadataScheme">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Meta-data schemes</rdf:li>
+	<rdf:li xml:lang="es">Esquema de metadatos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent meta-data schemes.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan esquemas de metadatos</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+
+  <lom_meta:MetadataScheme rdf:ID="LOMv1.0">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">LOMv1.0</rdf:li>
+	<rdf:li xml:lang="es">LOMV1.0</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>IEEE Learning Object Metadata</rdfs:comment>
+  </lom_meta:MetadataScheme>
+
+  <lom_meta:MetadataScheme rdf:ID="ARIADNEv3">
+    <rdfs:label>ARIADNEv3</rdfs:label>
+    <rdfs:comment>ARIADNE Metadata</rdfs:comment>
+  </lom_meta:MetadataScheme>
+
+  <lom_meta:MetadataScheme rdf:ID="IMSMD_1.2">
+    <rdfs:label>IMSMD_1.2</rdfs:label>
+    <rdfs:comment>IMS Metadata</rdfs:comment>
+  </lom_meta:MetadataScheme>
+
+  <rdf:Property rdf:ID="metadatascheme">
+    <rdfs:range rdf:resource="#MetadataScheme"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Meta-data scheme</rdf:li>
+	<rdf:li xml:lang="es">Esquema de metadatos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The meta-data scheme used by the document.</rdf:li>
+	<rdf:li xml:lang="es">El esquema de metadatos usados por el documento.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+</rdf:RDF>

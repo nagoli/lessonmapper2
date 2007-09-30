@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#">
+
+  <rdfs:Class rdf:ID="LangString">
+    <rdfs:label>LangString</rdfs:label>
+    <rdfs:comment>Instances of this class represent a natural language object, with possible translations.
+It is expected to have an rdf:value pointing to the primary value, together with several lom:translations.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdf:Property rdf:ID="translation">
+    <rdfs:domain rdf:resource="#LangString"/>
+    <rdfs:label>Translation</rdfs:label>
+    <rdfs:comment>A translation of the natural language object represented by a LangString.</rdfs:comment>
+  </rdf:Property>
+
+
+  <rdfs:Class rdf:ID="ISO8601">
+    <rdfs:label>ISO8601</rdfs:label>
+    <rdfs:comment>Instances of this class are dates and times (especially lengths of time)
+     encoded with ISO8601.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdf:Property rdf:ID="general">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">General</rdf:li>
+	<rdf:li xml:lang="es">General</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="lifecycle">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Life Cycle</rdf:li>
+	<rdf:li xml:lang="es">Cíclo de vida</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="metametadata">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Meta-Metadata</rdf:li>
+	<rdf:li xml:lang="es">Meta-metadatos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+
+<rdf:Property rdf:ID="technical">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Technical</rdf:li>
+	<rdf:li xml:lang="es">Técnico</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="educational">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Educational</rdf:li>
+	<rdf:li xml:lang="es">Educacional</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="rights">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Rights</rdf:li>
+	<rdf:li xml:lang="es">Derechos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="relation">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Relation</rdf:li>
+	<rdf:li xml:lang="es">Relación</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="annotation">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Annotation</rdf:li>
+	<rdf:li xml:lang="es">Anotación</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="classification">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Classfication</rdf:li>
+	<rdf:li xml:lang="es">Clasificación</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="notDefined">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Not Defined</rdf:li>
+	<rdf:li xml:lang="es">No definido</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+</rdf:RDF>

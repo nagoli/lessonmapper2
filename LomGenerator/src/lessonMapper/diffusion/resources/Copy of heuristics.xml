@@ -1,0 +1,983 @@
+<heuristic>
+   
+    <!-- general language-->
+    <suggestion attribute="general/language" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="introducedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="assessedby">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/language" relation="assesses">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="supportedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="supports">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="abstractedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="examplifiedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="isbackgroundfor">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="hasBackgroundIn">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="summarizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/language" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <restriction attribute="general/language" relation="isPartOf">
+        <![CDATA[     'contained': INTERSECTION(vij) ]]>
+    </restriction>
+    <restriction attribute="general/language" relation="haspart">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>
+     <suggestion attribute="general/language" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/language" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/language" relation="explains">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/language" relation="resolvedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/language" relation="resolves">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/language" relation="refutedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/language" relation="refutes">
+            UNION(vi)
+    </suggestion>
+    
+    
+     
+   <!-- general/keyword-->
+    <suggestion attribute="general/keyword" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="introducedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="assessedby">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="assesses">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="supportedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="supports">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="abstractedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="examplifiedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="isbackgroundfor">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="hasBackgroundIn">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="summarizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="explains">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="resolvedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="resolves">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="refutedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/keyword" relation="refutes">
+            UNION(vi)
+    </suggestion>
+    
+         
+   <!-- general/coverage-->
+    <suggestion attribute="general/coverage" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="introducedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="assessedby">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/coverage" relation="assesses">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="supportedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="supports">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="abstractedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="examplifiedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="isbackgroundfor">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="hasBackgroundIn">
+            UNION(vi)
+    </suggestion>
+    <restriction attribute="general/coverage" relation="summarizedBy">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>    
+    <suggestion attribute="general/coverage" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <restriction attribute="general/coverage" relation="ispartof">
+       <![CDATA[     'contained': INTERSECTION(vij) ]]>
+    </restriction>
+    <restriction attribute="general/coverage" relation="haspart">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>
+     <suggestion attribute="general/coverage" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/coverage" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/coverage" relation="explains">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/coverage" relation="resolvedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/coverage" relation="resolves">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/coverage" relation="refutedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/coverage" relation="refutes">
+            UNION(vi)
+    </suggestion>
+    
+    
+       <!-- general/structure-->
+   
+  
+    <suggestion attribute="general/structure" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/structure" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/structure" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     
+    
+             
+   <!-- general/aggregationlevel-->
+    <restriction attribute="general/aggregationlevel" relation="introducesTo">
+            <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="introducedby">
+             <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="assessedby">
+           <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+     <restriction attribute="general/aggregationlevel" relation="assesses">
+            <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <suggestion attribute="general/aggregationlevel" relation="supportedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationlevel" relation="supports">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationlevel" relation="abstractedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationlevel" relation="examplifiedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationlevel" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationlevel" relation="isbackgroundfor">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationlevel" relation="hasBackgroundIn">
+            UNION(vi)
+    </suggestion>
+    <restriction attribute="general/aggregationlevel" relation="summarizedBy">
+           <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="summarizes">
+          <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="isPartOf">
+            <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+     <restriction attribute="general/aggregationlevel" relation="hasPart">
+           <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+     <suggestion attribute="general/aggregationlevel" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/aggregationlevel" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/aggregationlevel" relation="explains">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/aggregationlevel" relation="resolvedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/aggregationlevel" relation="resolves">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/aggregationlevel" relation="refutedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="general/aggregationlevel" relation="refutes">
+            UNION(vi)
+    </suggestion>
+    
+    
+  <!-- educational/interactivtytype-->
+    <suggestion attribute="educational/interactivtytype" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/interactivtytype" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/interactivtytype" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/interactivtytype" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+    
+
+
+  
+   <!-- educationalRessourceType-->
+    <suggestion attribute="educationalRessourceType" relation="abstractedby">
+            <![CDATA[   'contained': 'exercise,simulation,diagram,figure,graph,slide,table,narrativeText,experiment,problemStatement,selfAssesment' ]]>
+    </suggestion>
+    <restriction attribute="educationalRessourceType" relation="examplifiedby">
+             <![CDATA[   'contained': 'questionary,diagram,figure,graph,index,slide,table,narrativeText,problemStatement,selfAssesment'  ]]>
+    </restriction>
+    <suggestion attribute="educationalRessourceType" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educationalRessourceType" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educationalRessourceType" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educationalRessourceType" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <restriction attribute="educationalRessourceType" relation="explainedBy">
+          <![CDATA[   'contained': 'exercise,simulation,diagram,figure,graph,slide,table,narrativeText,experiment,problemStatement,selfAssesment' ]]>
+    </restriction>
+     <restriction attribute="educationalRessourceType" relation="explains">
+             <![CDATA[   'contained': 'questionary,diagram,figure,graph,index,slide,table,narrativeText,problemStatement,selfAssesment'  ]]>
+    </restriction>
+
+    
+
+   
+   <!-- educational/interactivitylevel-->
+    
+    <suggestion attribute="educational/interactivitylevel" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+   
+    <suggestion attribute="educational/interactivitylevel" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/interactivitylevel" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/interactivitylevel" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+
+   
+
+   <!-- educational/semanticdensity-->
+    <restriction attribute="educational/semanticdensity" relation="introducesTo">
+            <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/semanticdensity" relation="introducedby">
+            <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <suggestion attribute="educational/semanticdensity" relation="abstractedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/semanticdensity" relation="examplifiedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/semanticdensity" relation="comparablewith">
+            UNION(vi)
+    </suggestion>   
+    <restriction attribute="educational/semanticdensity" relation="summarizedBy">
+             <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/semanticdensity" relation="summarizes">
+             <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <suggestion attribute="educational/semanticdensity" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/semanticdensity" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/semanticdensity" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/semanticdensity" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/semanticdensity" relation="explains">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/semanticdensity" relation="resolvedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/semanticdensity" relation="resolves">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/semanticdensity" relation="refutedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/semanticdensity" relation="refutes">
+            UNION(vi)
+    </suggestion>
+        
+    
+    
+   <!-- educational/intendeduserrole-->
+   
+    <restriction attribute="educational/intendeduserrole" relation="assesses">
+            <![CDATA[   'contained': 'learner' ]]>
+    </restriction>
+
+  
+    <suggestion attribute="educational/intendeduserrole" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+ 
+    <suggestion attribute="educational/intendeduserrole" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/intendeduserrole" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/intendeduserrole" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+   
+
+
+     
+   <!-- educational/context-->
+    <suggestion attribute="educational/context" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="introducedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="assessedby">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/context" relation="assesses">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="supportedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="supports">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="abstractedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="examplifiedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="isbackgroundfor">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="hasBackgroundIn">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="summarizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <restriction attribute="educational/context" relation="isPartOf">
+             <![CDATA[   '<=': MIN(vij) ]]>
+    </restriction>
+     <restriction attribute="educational/context" relation="hasPart">
+           <![CDATA[   '>=': MAX(vij) ]]>
+    </restriction>
+     <suggestion attribute="educational/context" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/context" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/context" relation="explains">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/context" relation="resolvedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/context" relation="resolves">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/context" relation="refutedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/context" relation="refutes">
+            UNION(vi)
+    </suggestion>
+    
+         
+
+ <!-- educational/typicallearningtime-->
+    <restriction attribute="educational/typicallearningtime" relation="introducesTo">
+             <![CDATA[   '<=': SUM(vij) ]]>
+    </restriction>
+   
+     <restriction attribute="educational/typicallearningtime" relation="assesses">
+           <![CDATA[   '<=': SUM(vij) ]]>
+    </restriction>
+    
+    <suggestion attribute="educational/typicallearningtime" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+  
+    <restriction attribute="educational/typicallearningtime" relation="summarizes">
+              <![CDATA[   '<=': SUM(vij) ]]>
+    </restriction>
+    
+     <suggestion attribute="educational/typicallearningtime" relation="hasPart">
+            SUM(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicallearningtime" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+    
+    
+   
+   <!-- educational/language-->
+    <suggestion attribute="educational/language" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="introducedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="assessedby">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="assesses">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="supportedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="supports">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="abstractedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="examplifiedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="isbackgroundfor">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="hasBackgroundIn">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="summarizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="explains">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="resolvedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="resolves">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="refutedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/language" relation="refutes">
+            UNION(vi)
+    </suggestion>
+
+
+ 
+   <!-- educational/typicalagerange            TODO MAKE COMPARISON OF AGE RANGE-->
+    <suggestion attribute="educational/typicalagerange" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="introducedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="assessedby">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="assesses">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="supportedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="supports">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="abstractedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="examplifiedby">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="isbackgroundfor">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="hasBackgroundIn">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="summarizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/typicalagerange" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="explains">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="resolvedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="resolves">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="refutedBy">
+            UNION(vi)
+    </suggestion>
+     <suggestion attribute="educational/typicalagerange" relation="refutes">
+            UNION(vi)
+    </suggestion>
+
+
+   
+   <!-- educational/difficulty    we suggest to give restriction of type inferior to the max         -->
+    <restriction attribute="educational/difficulty" relation="introducesTo">
+             <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+ 
+     <restriction attribute="educational/difficulty" relation="assesses">
+           <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+    
+    <restriction attribute="educational/difficulty" relation="supports">
+           <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+  
+    <suggestion attribute="educational/difficulty" relation="comparablewith">
+            UNION(vi)
+    </suggestion>
+
+    <restriction attribute="educational/difficulty" relation="summarizes">
+               <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+
+     <restriction attribute="educational/difficulty" relation="hasPart">
+            <![CDATA[   '>=': MIN(vij) ]]>
+    </restriction>
+     <suggestion attribute="educational/difficulty" relation="isVersionOf">
+            UNION(vi)
+    </suggestion>
+    
+    
+   <!-- rights/cost-->
+   
+    <suggestion attribute="rights/cost" relation="comparablewith">
+            MIN(vi)
+    </suggestion>
+    <restriction attribute="rights/cost" relation="isPartOf">
+           <![CDATA[   '<=': MIN(vij) ]]>
+    </restriction>
+     <restriction attribute="rights/cost" relation="hasPart">
+       <![CDATA[   '>=': MAX(vij) ]]>
+    </restriction>
+     <suggestion attribute="rights/cost" relation="isVersionOf">
+            MAX(vi)
+    </suggestion>
+    
+    
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--Old rules-->
+    
+    <suggestion attribute="educational/language" relation="concretizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="requiredBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="requires">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="summarizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/keyword" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="summarizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/coverage" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationLevel" relation="concretizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationLevel" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationLevel" relation="requiredBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="general/aggregationLevel" relation="requires">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="hasPart">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="concretizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/context" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="concretizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="explainedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="requiredBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="requires">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="introducesTo">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="summarizedBy">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="educational/language" relation="summarizes">
+            UNION(vi)
+    </suggestion>
+    <suggestion attribute="rights/cost" relation="hasPart">
+            SUM(vi)
+    </suggestion>
+
+    <suggestion attribute="educational/semanticdensity" relation="isPartOf">
+            UNION(vi)
+    </suggestion>
+ 	<suggestion attribute="general/keyword" relation="haspart">
+       UNION(vi) 
+    </suggestion>
+  	<suggestion attribute="general/keyword" relation="isPartOf">
+		 INTERSECTION(vi) 
+    </suggestion>
+
+
+
+ <restriction attribute="general/language" relation="haspart">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>
+   
+    <restriction attribute="general/coverage" relation="haspart">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>
+    <restriction attribute="general/coverage" relation="concretizedBy">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>
+    
+    <restriction attribute="educational/language" relation="haspart">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>
+    
+    
+    <restriction attribute="general/language" relation="isPartOf">
+     <![CDATA[     'contained': INTERSECTION(vij) ]]>
+    </restriction>
+  
+    <restriction attribute="general/coverage" relation="isPartOf">
+       <![CDATA[    'contained': INTERSECTION(vij) ]]>
+    </restriction>
+    <restriction attribute="general/aggregationLevel" relation="isPartOf">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationLevel" relation="hasPart">
+       <![CDATA[    '>=': MAX(vij)                 ]]>
+    </restriction>
+    <restriction attribute="general/aggregationLevel" relation="introducesTo">
+       <![CDATA[    '<=': MIN(vij)    ]]>
+    </restriction>
+    <restriction attribute="general/aggregationLevel" relation="summarizedBy">
+       <![CDATA[    '>=': MAX(vij)    ]]>
+    </restriction>
+    <restriction attribute="general/aggregationLevel" relation="summarizes">
+       <![CDATA[    '<=': MIN(vij)    ]]>
+    </restriction>
+
+ 	<restriction attribute="educational/semanticdensity" relation="introducesTo">
+       <![CDATA[    '<=': MIN(vij)    ]]>
+    </restriction>
+    
+    <restriction attribute="educational/semanticdensity" relation="hasPart">
+       <![CDATA[    '>=': MAX(vij)    ]]>
+    </restriction>
+
+    <restriction attribute="educational/learningResourceType" relation="concretizedBy">
+        <![CDATA[   'contained': 'questionary,diagram,figure,graph,index,slide,table,narrativeText,problemStatement,selfAssesment'  ]]>
+    </restriction>
+    <restriction attribute="educational/learningResourceType" relation="explainedBy">
+        <![CDATA[   'contained': 'exercise,simulation,diagram,figure,graph,slide,table,narrativeText,experiment,problemStatement,selfAssesment' ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="requiredBy">
+       <![CDATA[    '<=': MIN(vij) ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="requires">
+        <![CDATA[   '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="introducesTo">
+        <![CDATA[   '<=': MIN(vij)   ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="summarizedBy">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="summarizesBy">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="haspart">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="isPartOf">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalAgeRange" relation="isPartOf">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalAgeRange" relation="hasPart">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalAgeRange" relation="concretizedBy">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalAgeRange" relation="explainedBy">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalAgeRange" relation="requiredBy">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalAgeRange" relation="requires">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalAgeRange" relation="introducesTo">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalLearningTime" relation="isPartOf">
+      <![CDATA[     '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalLearningTime" relation="isPartOf">
+      <![CDATA[     '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalLearningTime" relation="introducesTo">
+      <![CDATA[     '<=': SUM(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalLearningTime" relation="summarizedBy">
+       <![CDATA[    '>=': SUM(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/typicalLearningTime" relation="summarizes">
+       <![CDATA[    '<=': SUM(vij)   ]]>
+    </restriction>
+    <restriction attribute="educational/language" relation="isPartOf">
+       <![CDATA[    'contained': INTERSECTION(vij) ]]>
+    </restriction>
+    <restriction attribute="rights/cost" relation="isPartOf">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="rights/copyrightandotherrestrictions" relation="isPartOf">
+       <![CDATA[    '<=': MIN(vij)   ]]>
+    </restriction>
+    <restriction attribute="rights/copyrightandotherrestrictions" relation="hasPart">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+
+<restriction attribute="educational/interactivityType" relation="concretizedBy">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/interactivityType" relation="explainedBy">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+<restriction attribute="educational/interactivityLevel" relation="concretizedBy">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/interactivityLevel" relation="explainedBy">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+   
+
+
+</heuristic>
+<!-- TODO check this 
+    <restriction attribute="educational/semanticDensity" relation="haspart">
+       <![CDATA[     '=':  SUM(vij*li.educational/typicalLearningTime)/(SUM(1)*SUM(li.educational/typicalLearningTime)) ]]>
+    </restriction>
+    <restriction attribute="educational/difficulty" relation="haspart">
+       <![CDATA[     '=':  SUM(vij*li.educational/typicalLearningTime)/(SUM(1)*SUM(li.educational/typicalLearningTime)) ]]>
+    </restriction>
+    -->
+     <!--TODOrestriction attribute="educational/typicalLearningTime" relation="hasPart">
+       <![CDATA[    '>=': SUM[oij='<=' or oij='='](vij) //sequential    ]]>
+       <![CDATA[     '>=': MAX[oij='<=' or oij='='](vij) //parallel    ]]>
+    </TODOrestriction-->

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ 
+<rdf:RDF
+	 xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+     xmlns:lom_rel="http://www.imsproject.org/rdf/imsmd_relationv1p2#">
+
+
+  <rdf:Description about="http://purl.org/dc/elements/1.1/source">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+  </rdf:Description>
+
+
+ <rdf:Property rdf:ID="notDefined" lm:contrary="notDefined" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Not Defined</rdf:li>
+	<rdf:li xml:lang="es">No Definida</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+ <rdf:Property rdf:ID="introducesTo" lm:contrary="introducedBy" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">introduces to</rdf:li>
+	<rdf:li xml:lang="es">introduce a</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="introducedBy" lm:contrary="introducesTo" lm:visible="false" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">is introduced by</rdf:li>
+	<rdf:li xml:lang="es">es introducido por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="assessedBy" lm:contrary="assesses" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">assessed by</rdf:li>
+	<rdf:li xml:lang="es">evaluado por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="assesses" lm:contrary="assessedBy" lm:visible="false" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">assesses</rdf:li>
+	<rdf:li xml:lang="es">evalua</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="supportedby" lm:contrary="supports" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">supported by</rdf:li>
+	<rdf:li xml:lang="es">facilitado por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="supports" lm:contrary="supportedby" lm:visible="false" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">supports</rdf:li>
+	<rdf:li xml:lang="es">facilita</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="abstractedBy" lm:contrary="examplifiedBy" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">abstracted by</rdf:li>
+	<rdf:li xml:lang="es">abstraido por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="examplifiedBy" lm:contrary="abstractedBy" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">examplified by</rdf:li>
+	<rdf:li xml:lang="es">ejemplificado por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+
+
+<rdf:Property rdf:ID="isComparableWith" lm:contrary="isComparableWith" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">comparable with</rdf:li>
+	<rdf:li xml:lang="es">comparable con</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="isBackgroundFor" lm:contrary="hasBackgroundIn" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">background for</rdf:li>
+	<rdf:li xml:lang="es">base para</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="hasBackgroundIn" lm:contrary="isBackgroundFor" lm:visible="false" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">has background in</rdf:li>
+	<rdf:li xml:lang="es">tiene base en</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="summarizedBy" lm:contrary="summarizes" lm:visible="true" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">summarized by</rdf:li>
+	<rdf:li xml:lang="es">resumido por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="summarizes" lm:contrary="summarizedBy" lm:visible="false" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">summarizes</rdf:li>
+	<rdf:li xml:lang="es">resume</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="isPartOf" lm:contrary="hasPart" lm:visible="false" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">is part of</rdf:li>
+	<rdf:li xml:lang="es">es parte de</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="hasPart" lm:contrary="isPartOf" lm:visible="false" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">has part</rdf:li>
+	<rdf:li xml:lang="es">tiene parte con</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="isVersionOf" lm:contrary="isVersionOf" lm:visible="false" lm:stronglyCoupled="false">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">is version of</rdf:li>
+	<rdf:li xml:lang="es">es version de</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="explainedBy" lm:contrary="explains" lm:visible="true" lm:stronglyCoupled="true">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">explained by</rdf:li>
+	<rdf:li xml:lang="es">explicado por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="explains" lm:contrary="explainedBy" lm:visible="false" lm:stronglyCoupled="true">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">explains</rdf:li>
+	<rdf:li xml:lang="es">explica</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+
+<rdf:Property rdf:ID="resolvedBy" lm:contrary="resolves" lm:visible="true" lm:stronglyCoupled="true">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">resolved by</rdf:li>
+	<rdf:li xml:lang="es">resuelto por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="resolves" lm:contrary="resolvedBy" lm:visible="false" lm:stronglyCoupled="true">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">resolves</rdf:li>
+	<rdf:li xml:lang="es">resuelve</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="refutedBy" lm:contrary="refutes" lm:visible="true" lm:stronglyCoupled="true">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">refuted by</rdf:li>
+	<rdf:li xml:lang="es">refutado por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="refutes" lm:contrary="refutedBy" lm:visible="false" lm:stronglyCoupled="true">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">refutes</rdf:li>
+	<rdf:li xml:lang="es">refuta</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+
+
+
+
+</rdf:RDF>
+<!-- ex version ...
+  <rdf:Property rdf:ID="isBasisFor">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Is Basis For</rdf:li>
+	<rdf:li xml:lang="es">Es Base Para</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="isReferencedBy">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Is Referenced By</rdf:li>
+	<rdf:li xml:lang="es">Es Referenciado Por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="isPartOf">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+   <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Is Part Of</rdf:li>
+	<rdf:li xml:lang="es">Es Parte de</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+ </rdf:Property>
+  
+  <rdf:Property rdf:ID="isVersionOf">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+   <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Is Version Of</rdf:li>
+	<rdf:li xml:lang="es">Es Version De</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+    <rdf:Property rdf:ID="introducesTo">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+   <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Introduces To</rdf:li>
+	<rdf:li xml:lang="es">Introduce A</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+    <rdf:Property rdf:ID="summarizedBy">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+   <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Summarized By</rdf:li>
+	<rdf:li xml:lang="es">Resumido Por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+    <rdf:Property rdf:ID="explainedBy">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Explained By</rdf:li>
+	<rdf:li xml:lang="es">Explicado Por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+    <rdf:Property rdf:ID="concretizedBy">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Concretized By</rdf:li>
+	<rdf:li xml:lang="es">Concretizado Por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+    <rdf:Property rdf:ID="refinedBy">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+   <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Refined By</rdf:li>
+	<rdf:li xml:lang="es">Rafinado Por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+    <rdf:Property rdf:ID="supportedBy">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Supported By</rdf:li>
+	<rdf:li xml:lang="es">Suportado Por</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+-->  

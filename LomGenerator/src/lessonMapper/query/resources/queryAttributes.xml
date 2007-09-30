@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- list of LOM attributes being used for query generation
+-->
+
+<attributes>
+general/title
+general/keyword
+general/description
+general/language
+general/coverage
+general/structure
+general/aggregationlevel
+<!--lifecycle/version
+lifecycle/status-->
+<!--technical/format
+technical/size
+technical/requirement
+technical/installationremarks
+technical/duration-->
+educational/interactivitytype
+educational/learningresourcetype
+educational/interactivitylevel
+educational/semanticdensity
+educational/intendedenduserrole
+educational/context
+educational/typicalagerange
+educational/difficulty
+<!--educational/typicallearningtime-->
+educational/description
+educational/language
+<!--rights/cost
+rights/copyrightandotherrestrictions
+rights/description  -->
+</attributes>

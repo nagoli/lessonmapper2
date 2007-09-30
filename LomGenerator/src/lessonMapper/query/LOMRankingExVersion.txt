@@ -1,0 +1,266 @@
+/**
+	 * return the scored obtained by aLOM
+	 */
+	public double getScore(LOM aLOM, StringBuffer aLogString) {
+		if (aLogString == null)
+			aLogString = new StringBuffer();
+		aLogString.append("TITLE = " + aLOM.toString() + "\n");
+		double theSuggestionProba = getSuggestionProba(aLOM, aLogString);
+		double theRestrictionProba = getRestrictionProba(aLOM, aLogString);
+		double theScore = Math.exp(theRestrictionProba + theSuggestionProba);
+		aLogString.append("TOTAL SCORE = " + theScore);
+		return theScore;
+	}
+
+	/**
+	 * return the scored obtained by aLOM
+	 */
+	public double getScoreAlternative(LOM aLOM, StringBuffer aLogString) {
+		if (aLogString == null)
+			aLogString = new StringBuffer();
+		aLogString.append("TITLE = " + aLOM.toString() + "\n");
+		double theSuggestionProba = getSuggestionProbaAlternative(aLOM,
+				aLogString);
+		double theRestrictionProba = getRestrictionProbaAlternative(aLOM,
+				aLogString);
+		double theScore = (theRestrictionProba + theSuggestionProba);
+		// double theScore = theRestrictionProba;
+		aLogString.append("TOTAL SCORE = " + theScore);
+		return theScore;
+	}
+	
+	
+	
+	/**
+	 * return the proba of aLOM based on the suggestion diffusion
+	 * 
+	 * @param aLOM
+	 * @return
+	 */
+	public double getSuggestionProbaAlternative(LOM aLOM,
+			StringBuffer aTraceString) {
+		double theTotalProba = 0;
+		int theTotal = 0;
+		for (LOMAttribute theAttribute : ITSAttributes) {
+			LOMValue theSuggestion = Diffusion.SugDif(itsLOM, theAttribute);
+			if (theSuggestion != null) {
+				LOMValue theValue = theAttribute.getValueIn(aLOM);
+				if (theSuggestion instanceof LOMValueSet) {
+					// List<Point2D.Double> theIntermediateResults = new
+					// ArrayList<Point2D.Double>();
+					double theProba = 0;
+					for (Couple<String, List<Couple<LOM, LOMRelationType>>> theSug : ((LOMValueSet) theSuggestion)
+							.getSet()) {
+						if (theSug.getRightElement().size() > 0) {
+							StringTokenizer theStringTokenizer = new StringTokenizer(
+									theSug.getLeftElement(), ", \t\n\r\f");
+							// int theSugTokenNb =
+							// theStringTokenizer.countTokens();
+							int theMatchingTokenNb = 0;
+							for (String theToken; theStringTokenizer
+									.hasMoreTokens();) {
+								theToken = theStringTokenizer.nextToken();
+								boolean isContained = theValue
+										.contains(new LOMValueSet(theToken,
+												theAttribute));
+								if (isContained)
+									theMatchingTokenNb += 1;
+							}
+							double theWeight = 0;
+							for (Couple<LOM, LOMRelationType> theCouple : theSug
+									.getRightElement()) {
+								double theIntermediateProba = SuggestionProbability
+										.getInstance().getProbaFor(
+												theAttribute,
+												theCouple.getRightElement());
+								if (theMatchingTokenNb == 0)
+									theIntermediateProba = 1 - theIntermediateProba;
+								theWeight += Math.log(theIntermediateProba);
+							}
+							// add the weight of the attribute
+							// theWeight+=Math.log(1-IntersectionProbability.getInstance().getProbaFor(theAttribute));
+							/*
+							 * if (theWeight < 0.001) { System.out.println("very
+							 * small weight " + theWeight + " for " +
+							 * theAttribute + " " + theSug.getRightElement()); }
+							 */
+							theProba += Math.exp(theWeight);
+							theTotal++;
+						} else {
+							System.out.println("suggestion without origin for "
+									+ theAttribute + " " + theSug);
+						}
+
+					}
+					aTraceString.append(" " + theAttribute.getName() + ": SUG("
+							+ theSuggestion + "), VAL(" + theValue + ") gives "
+							+ theProba + " \n");
+					theTotalProba += theProba;
+				}
+			}
+		}
+
+		aTraceString.append(" SUG SCORE == " + theTotalProba + " \n");
+		return theTotalProba;
+	}
+
+	/**
+	 * return the score of aLOM based on the restriction diffusion and the
+	 * maximimum score that may be done for that LOM
+	 * 
+	 * @param aLOM
+	 * @return
+	 */
+	public double getRestrictionProbaAlternative(LOM aLOM,
+			StringBuffer aLogString) {
+		double theProba = 0;
+		int theTotal = 0;
+		for (LOMAttribute theAttribute : ITSAttributes) {
+			LOMRestrictionSet theRestriction = Diffusion.ResDif(itsLOM,
+					theAttribute);
+			if (theRestriction != null && !theRestriction.isEmpty()) {
+				LOMValue theValue = theAttribute.getValueIn(aLOM);
+				// calculate the proportion of satidfied restriction
+				int theTotalIntermediateScore = theRestriction
+						.getLOMRestrictionValues().size();
+				int theIntermediateScore = theRestriction
+						.restrictionsSatisfiedBy(theValue).size();
+				/*
+				 * theProba += ((RestrictionProbability.getInstance()
+				 * .getProbaFor(theAttribute) theIntermediateScore) +
+				 * (1-RestrictionProbability.getInstance()
+				 * .getProbaFor(theAttribute)) (theTotalIntermediateScore-
+				 * theIntermediateScore ) ) / theTotalIntermediateScore;
+				 */
+				theProba += theIntermediateScore / theTotalIntermediateScore;
+				theTotal++;
+				aLogString.append(" " + theAttribute.getName() + ": RES("
+						+ theRestriction + "), VAL(" + theValue + ") gives "
+						+ theIntermediateScore + "/"
+						+ theTotalIntermediateScore + " \n");
+			}
+		}
+		aLogString.append(" RES SCORE == " + theProba + " \n");
+		return theProba;
+	}
+
+	/**
+	 * return the proba of aLOM based on the suggestion diffusion
+	 * 
+	 * @param aLOM
+	 * @return
+	 */
+	public double getSuggestionProba(LOM aLOM, StringBuffer aTraceString) {
+		double theProba = 0;
+		for (LOMAttribute theAttribute : ITSAttributes) {
+			LOMValue theSuggestion = Diffusion.SugDif(itsLOM, theAttribute);
+			if (theSuggestion != null) {
+				LOMValue theValue = theAttribute.getValueIn(aLOM);
+				if (theSuggestion instanceof LOMValueSet) {
+					// List<Point2D.Double> theIntermediateResults = new
+					// ArrayList<Point2D.Double>();
+					for (Couple<String, List<Couple<LOM, LOMRelationType>>> theSug : ((LOMValueSet) theSuggestion)
+							.getSet()) {
+						if (theSug.getRightElement().size() > 0
+								&& theSug.getRightElement().size() == 1)
+						// limit to the suggestion with one element
+						{
+							StringTokenizer theStringTokenizer = new StringTokenizer(
+									theSug.getLeftElement(), ", \t\n\r\f");
+							// int theSugTokenNb =
+							// theStringTokenizer.countTokens();
+							int theMatchingTokenNb = 0;
+							for (String theToken; theStringTokenizer
+									.hasMoreTokens();) {
+								theToken = theStringTokenizer.nextToken();
+								boolean isContained = theValue
+										.contains(new LOMValueSet(theToken,
+												theAttribute));
+								if (isContained)
+									theMatchingTokenNb += 1;
+							}
+							double theWeight = 1;
+							for (Couple<LOM, LOMRelationType> theCouple : theSug
+									.getRightElement())
+								theWeight *= SuggestionProbability
+										.getInstance().getProbaFor(
+												theAttribute,
+												theCouple.getRightElement());
+							if (theMatchingTokenNb == 0)
+								theWeight = 1 - theWeight;
+							if (theWeight < 0.001) {
+								System.out.println("very small weight "
+										+ theWeight + " for " + theAttribute
+										+ " " + theSug.getRightElement());
+							}
+							theProba += Math.log(theWeight)
+									- Math.log(1 - theWeight); // P(R)/P(Rc)
+							// odds
+							// relevance
+						} // calculus
+						/*
+						 * else { System.out.println("suggestion without
+						 * origin"); }
+						 */
+
+					}
+					aTraceString.append(" " + theAttribute.getName() + ": SUG("
+							+ theSuggestion + "), VAL(" + theValue + ") gives "
+							+ theProba + " \n");
+				}
+			}
+		}
+		return theProba;
+	}
+
+	/**
+	 * return the score of aLOM based on the restriction diffusion and the
+	 * maximimum score that may be done for that LOM
+	 * 
+	 * @param aLOM
+	 * @return
+	 */
+	public double getRestrictionProba(LOM aLOM, StringBuffer aLogString) {
+		double theProba = 0;
+		for (LOMAttribute theAttribute : ITSAttributes) {
+			LOMRestrictionSet theRestriction = Diffusion.ResDif(itsLOM,
+					theAttribute);
+			if (theRestriction != null && !theRestriction.isEmpty()) {
+				LOMValue theValue = theAttribute.getValueIn(aLOM);
+				// calculate the proportion of satidfied restriction
+				int theTotalIntermediateScore = theRestriction
+						.getLOMRestrictionValues().size();
+				int theIntermediateScore = theRestriction
+						.restrictionsSatisfiedBy(theValue).size();
+				double theLog = Math.log(RestrictionProbability.getInstance()
+						.getProbaFor(theAttribute));
+				double theLogComplement = Math.log(1 - RestrictionProbability
+						.getInstance().getProbaFor(theAttribute));
+				theProba += theIntermediateScore * (theLog - theLogComplement);
+				theProba += (theTotalIntermediateScore - theIntermediateScore)
+						* (theLogComplement - theLog);
+				aLogString.append(" " + theAttribute.getName() + ": RES("
+						+ theRestriction + "), VAL(" + theValue + ") gives "
+						+ theIntermediateScore + "/"
+						+ theTotalIntermediateScore + " \n");
+			}
+		}
+		return theProba;
+	}
+
+	// tokenize the suggestion value to give 1 point for each
+	// similarity
+	/*
+	 * if (theSuggestion instanceof LOMValueInt) { double theIntermediateScore =
+	 * 0, theTotalIntermediateScore = 0; int theSug = ((LOMValueInt)
+	 * theSuggestion).getIntValue(); int theVal = ((LOMValueInt)
+	 * theValue).getIntValue(); double theProportionalVal = theVal * 100.0 /
+	 * theSug; // we aggregate the proportional porcentage to the score
+	 * theIntermediateScore = (100 - Math .abs(100 - theProportionalVal)) * 1.0 /
+	 * 100; theScore += theIntermediateScore; // we aggregate 1 to the total
+	 * score theTotalIntermediateScore = 1; theTotalScore +=
+	 * theTotalIntermediateScore; aTraceString.append(" " +
+	 * theAttribute.getName() + ": SUG(" + theSug + "), VAL(" + theVal + ")
+	 * gives " + theIntermediateScore + "/" + theTotalIntermediateScore + "
+	 * \n"); } else
+	 */

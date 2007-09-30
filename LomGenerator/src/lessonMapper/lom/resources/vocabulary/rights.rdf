@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+     xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+     xmlns:lom_rights="http://www.imsproject.org/rdf/imsmd_rightsv1p2#">
+
+  <rdfs:Class rdf:ID="Cost">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Cost</rdf:li>
+	<rdf:li xml:lang="es">Costo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent costs.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de la clase representan costos.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_rights:Cost rdf:ID="SomeCost" lm:orderingValue="10">
+    <rdfs:label>   
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Some Cost</rdf:li>
+	<rdf:li xml:lang="es">Tiene Costo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_rights:Cost>
+  <lom_rights:Cost rdf:ID="NoCost">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">NoCost</rdf:li>
+	<rdf:li xml:lang="es">Sin Costo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_rights:Cost>
+  
+  
+  <rdf:Property rdf:ID="cost" lm:orderingValue="30">
+    <rdfs:range rdf:resource="#Cost"/>
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Cost</rdf:li>
+	<rdf:li xml:lang="es">Costo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Whether use of this learning object requires payment.</rdf:li>
+      <rdf:li xml:lang="es">Si el uso de este objeto de aprendizaje.</rdf:li>
+    </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+  <rdfs:Class rdf:ID="CopyrightAndOtherRestrictions">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Copyright and other restrictions</rdf:li>
+	<rdf:li xml:lang="es">Derecho y otra restricciones</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent copyright and other restrictions.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de la clase representan derechos y otra </rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_rights:CopyrightAndOtherRestrictions rdf:ID="SomeRestriction" lm:orderingValue="30">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Some Restriction</rdf:li>
+	<rdf:li xml:lang="es">Unas Restriciones</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_rights:CopyrightAndOtherRestrictions>
+  <lom_rights:CopyrightAndOtherRestrictions rdf:ID="NoRestriction" lm:orderingValue="10">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">No Restriction</rdf:li>
+	<rdf:li xml:lang="es">Sin Restriciones</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_rights:CopyrightAndOtherRestrictions>
+  
+  
+  <rdf:Property rdf:ID="copyrightandotherrestrictions">
+    <rdfs:range rdf:resource="#CopyrightAndOtherRestrictions"/>
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Copyright and other Restrictions</rdf:li>
+	<rdf:li xml:lang="es">Derechos y otras restricciones</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Whether copyright or other restrictions apply to the use of this learning object.</rdf:li>
+	<rdf:li xml:lang="es">Si unos derechos y unas restricciones se applican sobre el uso de este objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+  
+ <rdf:Property rdf:ID="description">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Description</rdf:li>
+	<rdf:li xml:lang="es">Descripción</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Comments on the conditions of use of this learning object.</rdf:li>
+      <rdf:li xml:lang="es">Comentarios sobre las condiciones de utilización de este objeto educativo</rdf:li>
+    </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+</rdf:RDF>
