@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ 
+<rdf:RDF
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+ 
+ 
+ 
+ <rdf:Property rdf:ID="copyActivityWarning">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Activity Nodes cannot be copied but they can be cut.</rdf:li>
+	<rdf:li xml:lang="es">Nodos actividad no pueden ser copiados. Solo se pueden cortar.</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ <rdf:Property rdf:ID="commentNodeInit">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">DoubleClick to edit</rdf:li>
+	<rdf:li xml:lang="es">Doble click para editar</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ <rdf:Property rdf:ID="commentNodeHelp">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">This is a comment node. DoubleClick to edit</rdf:li>
+	<rdf:li xml:lang="es">Es un nodo de comentario. Doble click para editar</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ <rdf:Property rdf:ID="commentNodeDescription">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Add a new comment node to the current activity.</rdf:li>
+	<rdf:li xml:lang="es">Aggrega un nuevo nodo comentario a la actividad actual</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ <rdf:Property rdf:ID="commentNodeSizer">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Drag it to change the width of the comment node.</rdf:li>
+	<rdf:li xml:lang="es">Mueve este icono para cambiar el ancho del nodo comentario</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ 
+ 
+<rdf:Property rdf:ID="closingLM">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Closing LessonMapper2</rdf:li>
+	<rdf:li xml:lang="es">Cerrando LessonMapper2</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="closingConfirmation">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Would you like to save the project before exiting?</rdf:li>
+	<rdf:li xml:lang="es">¿Quiere guadar el proyecto antes de cerrar la applicacion?</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ <rdf:Property rdf:ID="newProject">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Open a new project</rdf:li>
+	<rdf:li xml:lang="es">Abriendo un nuevo proyecto</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="newProjectConfirmation">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Would you like to save the current project before closing it?</rdf:li>
+	<rdf:li xml:lang="es">¿Quiere guadar el proyecto actual antes de cerrarlo?</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ 
+ <rdf:Property rdf:ID="loadProject">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Load another project</rdf:li>
+	<rdf:li xml:lang="es">Abriendo otro proyecto</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+<rdf:Property rdf:ID="setMaterialAsActivity">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Change this material node in an activity node</rdf:li>
+	<rdf:li xml:lang="es">Cambia este nodo material para un nodo actividad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+
+
+
+<rdf:Property rdf:ID="loadProjectConfirmation">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Would you like to save the current project before closing it?</rdf:li>
+	<rdf:li xml:lang="es">¿Quiere guadar el proyecto actual antes de cerrarlo?</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+  
+  <rdf:Property rdf:ID="associateAction">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Would you like to associate the default template document to this material node?
+Or do you prefer to set this node as an activity node?</rdf:li>
+	<rdf:li xml:lang="es">¿Quiere asociar este nodo con un documento patron? 
+¿O prefiere definir este documento como una actividad, es decir un contenedor? </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ 
+ <rdf:Property rdf:ID="associateActionTemplate">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Template</rdf:li>
+	<rdf:li xml:lang="es">Patron</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ <rdf:Property rdf:ID="associateActionActivity">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Activity</rdf:li>
+	<rdf:li xml:lang="es">Actividad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ 
+ <rdf:Property rdf:ID="existingMaterialWarning">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">This action will overwrite the exising  document  associated with this node.
+	 Are you sure to proceed? </rdf:li>
+	<rdf:li xml:lang="es">Este accion sobreescribira el documento asociado con este nodo. 
+	¿Esta seguro de querer applicarla?</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+ 
+ 
+ 
+  <rdf:Property rdf:ID="dragMode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Drag Mode: left click drag the whole pane or individual nodes of the present active layer</rdf:li>
+	<rdf:li xml:lang="es">Modo Desplazar: click izquierda para desplazar el panel principal o los nodos de la actividad activa </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="insertContainer">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Insert Container Mode: click to insert a new container</rdf:li>
+	<rdf:li xml:lang="es">Modo de Insersión de Contenedor: click para insertar un nuevo contenedor</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  
+  <rdf:Property rdf:ID="insertEdge">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Insert Edge Mode: Select source node then Select destination node</rdf:li>
+	<rdf:li xml:lang="es">Modo de Insersión de Relaciones: click para insertar una nueva relación</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  
+  
+  
+  <rdf:Property rdf:ID="insertActivity">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Insert Activity Mode: click to insert a new activity</rdf:li>
+	<rdf:li xml:lang="es">Modo de Insersión de Actividad: click para insertar una nueva actividad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="insertMaterial">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Insert Material Mode: click to insert a new material</rdf:li>
+	<rdf:li xml:lang="es">Modo de Insersión de Material: click para insertar un nuevo material</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+
+  <rdf:Property rdf:ID="insertLinkNode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Insert Link Mode: click to insert a new linknode</rdf:li>
+	<rdf:li xml:lang="es">Modo de Insersión de Nodo de Enlace: click para insertar un nuevo nodo de enlace</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+
+  <rdf:Property rdf:ID="selectMode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Selection Mode: click to select, Shift click to multiple selection or unselect</rdf:li>
+	<rdf:li xml:lang="es">Modo de Selección: click para seleccionar, shift+click para selecciones múltiples o deseleccionar nodos </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="genericActivity">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Generic Activity: Select to see and edit LOM description. Double/click to display contents</rdf:li>
+	<rdf:li xml:lang="es">Actividad Genérica: Selecciona para ver y editar elementos LOM. Doble click para mostrar contenido.</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="genericMaterial">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Query or Material Node. Select to see and edit LOM description. Double/click to make query or open material</rdf:li>
+	<rdf:li xml:lang="es">Consulta o Material: Selecciona para ver y editar elementos LOM. Doble click para hacer la consulta o abrir el material asociado.</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="removeRelation1">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">In addition to remove the views, do you also want to remove the relation</rdf:li>
+	<rdf:li xml:lang="es">Ademas de borrar la vista, usted quiere también borrar la relación asociada </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="removeRelation2">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en"> linking the LOM </rdf:li>
+	<rdf:li xml:lang="es"> uniendo el LOM </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="removeRelation3">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en"> with the LOM </rdf:li>
+	<rdf:li xml:lang="es"> con el LOM </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="containerNode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en"> Container Node. - Content may be navigate by double-clicking </rdf:li>
+	<rdf:li xml:lang="es"> Nodo Contenedor - Doble click permite navegar en el contenido </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="linkNode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Double-Click on linkNode in order to display a document</rdf:li>
+	<rdf:li xml:lang="es">Doble-click sobre el nodo de enlace para mostrar el documento asociado</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="motionNode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Move this node to reshape the edge. Copy, cut or delete this node to respectively copy, cut o delete the associated edge</rdf:li>
+	<rdf:li xml:lang="es">Mueve este nodo para deformar el arco asociado. Al copiar, cortar o borrar este nodo; usted copia, corta o borra el arco associado</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="LOMAttributeDefault">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Select one or more
+Learning Objects </rdf:li>
+	<rdf:li xml:lang="es">Selecciona uno o mas 
+objetos de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="treeDefault">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Select an attribute in the above tree</rdf:li>
+	<rdf:li xml:lang="es">Selecciona un atributo en el arból</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+
+  
+  <rdf:Property rdf:ID="Restrictions">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Restrictions : </rdf:li>
+	<rdf:li xml:lang="es">Restricciones: </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="Suggestions">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Suggestions : </rdf:li>
+	<rdf:li xml:lang="es">Recomendaciones: </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="noHelp1">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">No restrictions nor suggestions</rdf:li>
+	<rdf:li xml:lang="es">No hay restricciones o recomendaciones</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="noHelp2">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">for this attribute and this LOM</rdf:li>
+	<rdf:li xml:lang="es">para este atributo y este LOM</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="saveIcon">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">double click to save the current changes</rdf:li>
+	<rdf:li xml:lang="es">doble click para guardar los cambios actuales</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+ <rdf:Property rdf:ID="results">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Results</rdf:li>
+	<rdf:li xml:lang="es">Resultados</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>    
+
+ <rdf:Property rdf:ID="xquery">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Query Code</rdf:li>
+	<rdf:li xml:lang="es">Codigo de la Consulta</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>    
+
+
+  <rdf:Property rdf:ID="resultTitle">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Title: </rdf:li>
+	<rdf:li xml:lang="es">Título: </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="resultKeywords">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Keywords: </rdf:li>
+	<rdf:li xml:lang="es">Palabras Clave: </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+
+  <rdf:Property rdf:ID="resultDescription">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Description: </rdf:li>
+	<rdf:li xml:lang="es">Descripciones: </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="resultScore">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Ranking: </rdf:li>
+	<rdf:li xml:lang="es">Rango: </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="viewMaterial">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">View Material</rdf:li>
+	<rdf:li xml:lang="es">Ver Material</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+
+  <rdf:Property rdf:ID="adoptLOM">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Adopt LOM</rdf:li>
+	<rdf:li xml:lang="es">Adopta LOM</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="refineQuery">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Refine Query</rdf:li>
+	<rdf:li xml:lang="es">Precisa su consulta</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="helper">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Show descrition of components having mouse focus</rdf:li>
+	<rdf:li xml:lang="es">Muestra la descripción de los componentes con el focus del ratón</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+
+  <rdf:Property rdf:ID="mainCanvas">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Main Frame of Navigation- Change Interaction Mode with ToolBar Buttons</rdf:li>
+	<rdf:li xml:lang="es">Ventana principal de navegación - Cambia el tipo de interacción usando los botones de la barra de herramienta </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="previewCanvas">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Show parent layer of the main navigation frame - Click to display parent in main frame</rdf:li>
+	<rdf:li xml:lang="es">Muestra la actividad padre de la actividad dibujada en la ventana principal - Click para volver a la actividad padre en la ventana principal</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="cut">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Copy the selection to the clipboard and cut it when pasted</rdf:li>
+	<rdf:li xml:lang="es">Copia la selección y corta si está pegada</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="paste">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Paste the clipboard in the current activity</rdf:li>
+	<rdf:li xml:lang="es">Pega el contenido del porta-papeles en la actividad activa</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="copy">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Copy the Selection to the Clipboard</rdf:li>
+	<rdf:li xml:lang="es">Copia la selección en el porta-papeles</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="delete">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Delete current selection</rdf:li>
+	<rdf:li xml:lang="es">Borra la selección actual</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>  
+  
+  <rdf:Property rdf:ID="removeWarning">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Are you sure you want to remove the selection?</rdf:li>
+	<rdf:li xml:lang="es">¿Seguro que quiere borrar la selección?</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="new">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Load a new project</rdf:li>
+	<rdf:li xml:lang="es">Carga un nuevo proyecto</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="load">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Load an existing project </rdf:li>
+	<rdf:li xml:lang="es">Carga un proyecto existente </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="loadDialog">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Select a project directory </rdf:li>
+	<rdf:li xml:lang="es">Selecciona la carpeta de un proyecto </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+   <rdf:Property rdf:ID="loadMaterialDialog">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Select a file</rdf:li>
+	<rdf:li xml:lang="es">Selecciona un archivo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="saveAs">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Save current Project As...</rdf:li>
+	<rdf:li xml:lang="es">Guarda este proyecto como...</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="save">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Save current Project</rdf:li>
+	<rdf:li xml:lang="es">Guarda este proyecto</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="saveDialog">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Select the folder where to save the current Project</rdf:li>
+	<rdf:li xml:lang="es">Selecciona la carpeta donde guardar este proyecto</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  
+  <rdf:Property rdf:ID="saveOnDB">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Save current Project in the repository</rdf:li>
+	<rdf:li xml:lang="es">Graba el proyecto activo sobre el repositorio</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="query">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Query the repository with the current selection</rdf:li>
+	<rdf:li xml:lang="es">Consulta el repositorio con el objeto de aprendizaje seleccionado</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+   <rdf:Property rdf:ID="tutorial">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Load LM2 tutorial</rdf:li>
+	<rdf:li xml:lang="es">Abre LM2 tutorial</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+
+ <rdf:Property rdf:ID="materialMenuQuery">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Query repository</rdf:li>
+	<rdf:li xml:lang="es">Consulta el repositorio</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+<rdf:Property rdf:ID="materialMenuOpen">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Open associated material</rdf:li>
+	<rdf:li xml:lang="es">Abre el material asociado</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="materialDefaultMaster">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Set the default template for creating new material</rdf:li>
+	<rdf:li xml:lang="es">Define el patron por defecto usado con nuevo material</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="presentationMode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Document are open in presentation mode</rdf:li>
+	<rdf:li xml:lang="es">Abertura de documento en modo presención </rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="queryMode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Double click on nodes without document generates a  query</rdf:li>
+	<rdf:li xml:lang="es">Doble click sobre documento sin material asociado genera una query</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  
+  
+  <rdf:Property rdf:ID="materialDefaultMaster">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Set the default template for creating new material</rdf:li>
+	<rdf:li xml:lang="es">Define el patron por defecto usado con nuevo material</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+
+
+<rdf:Property rdf:ID="materialMenuModifyMaterial">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Change reused-material content</rdf:li>
+	<rdf:li xml:lang="es">Modifica el material asociado</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="materialMenuModifyContext">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Change reused-material context</rdf:li>
+	<rdf:li xml:lang="es">Modifica el contexto del material asociado</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="materialMenuAutomaticThumb">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Try to build automatically a thumbnail</rdf:li>
+	<rdf:li xml:lang="es">Intenta construir automaticamente imagen miniatura</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="materialMenuInteractiveThumb">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Build interactively a thumbnail</rdf:li>
+	<rdf:li xml:lang="es">Construye interactivamente imagen miniatura</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="materialMenuSet">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Set material</rdf:li>
+	<rdf:li xml:lang="es">Define el material</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="notitle">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Without Title</rdf:li>
+	<rdf:li xml:lang="es">Sin Título</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="screenshot">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Click here when ready to take the screenshot</rdf:li>
+	<rdf:li xml:lang="es">Cliquea aca cuando esta listo para tomar un imagen de la pantalla</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="screenshot2">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Select screen zone you want to keep as thumbnail</rdf:li>
+	<rdf:li xml:lang="es">Seleciona el area que define la imagen miniatura</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+ <rdf:Property rdf:ID="activityState">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Checking Validity</rdf:li>
+	<rdf:li xml:lang="es">Chequeando Validez</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="titleNode">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Double Click to edit the title of this node</rdf:li>
+	<rdf:li xml:lang="es">Doble Cliquea para editar el titulo de este nodo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="validity1">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">This LOM has</rdf:li>
+	<rdf:li xml:lang="es">Este LOM tiene</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="notvalid">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Invalid Elements</rdf:li>
+	<rdf:li xml:lang="es">Elementos Invalidos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="notdefined">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Undefined Elements</rdf:li>
+	<rdf:li xml:lang="es">Elementos No Definidos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="valid">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Not Invalid Elements</rdf:li>
+	<rdf:li xml:lang="es">Elementos Non-Invalidos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="validity2">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Click to show details.</rdf:li>
+	<rdf:li xml:lang="es">Cliquea para ver detalles</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="showAttribute">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Show Attributes</rdf:li>
+	<rdf:li xml:lang="es">Muestra Atributos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+  
+  <rdf:Property rdf:ID="showValidation">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Show Validation State</rdf:li>
+	<rdf:li xml:lang="es">Indicador de Validez</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+<rdf:Property rdf:ID="attributeWindow">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Selected Attributes:</rdf:li>
+	<rdf:li xml:lang="es">Atributos Seleccionados:</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property> 
+
+ </rdf:RDF>
