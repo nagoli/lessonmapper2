@@ -198,7 +198,7 @@ public class LessonMapper2 {
 
 		DiffusionCache.setActive(true);
 
-		if (true) return;
+		
 		
 		itsActiveProject = new LMProject();
 		itsUI = new LMUI();

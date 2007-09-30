@@ -1,5 +1,5 @@
 #Fat Jar Configuration File
-#Sat Sep 29 19:35:37 CLT 2007
+#Sun Sep 30 14:52:55 CLT 2007
 onejar.license.required=false
 manifest.classpath=
 manifest.removesigners=true
@@ -10,5 +10,5 @@ manifest.mainclass=dcc.lessonMapper2.LessonMapper2
 manifest.file=<createnew>
 jarname.isextern=true
 onejar.expand=
-excludes=<po|LessonMapper2>~dcc/~lessonMapper2/~resources/~Presentation.graffle/;<po|Piccolo>~extras.manifest;<po|LomGenerator>~.DS_Store;<po|LOR>~CVS/;<po|Utils>~CVS/;<po|Utils>~util/~CVS/;<po|Utils>~.cvsignore;<po|Utils>~.DS_Store;<po|Javassist>
+excludes=<po|LessonMapper2>~dcc/~lessonMapper2/~resources/~Presentation.graffle/;<po|Piccolo>~extras.manifest;<po|LomGenerator>~.DS_Store;<po|LOR>~CVS/;<po|Utils>~CVS/;<po|Utils>~util/~CVS/;<po|Utils>~.cvsignore;<po|Utils>~.DS_Store
 includes=
