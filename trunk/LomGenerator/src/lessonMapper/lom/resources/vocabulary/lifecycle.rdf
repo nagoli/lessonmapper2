@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+	 xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+     xmlns:lom_life="http://www.imsproject.org/rdf/imsmd_lifecyclev1p2#">
+
+  <rdf:Property rdf:ID="version">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Version</rdf:li>
+	<rdf:li xml:lang="es">Version</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Version of the object</rdf:li>
+	<rdf:li xml:lang="es">Version del objeto</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+  <rdfs:Class rdf:ID="Status">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Status types</rdf:li>
+	<rdf:li xml:lang="es">Tipo de estatus</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent status types.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan tipos de estatus</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_life:Status rdf:ID="Draft" lm:orderingValue="10">
+    <rdfs:label>    
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Draft</rdf:li>
+	<rdf:li xml:lang="es">Borador</rdf:li>
+      </rdf:Alt>
+    </rdfs:label> 
+  </lom_life:Status>
+  <lom_life:Status rdf:ID="Final" lm:orderingValue="20">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Final</rdf:li>
+	<rdf:li xml:lang="es">Finale</rdf:li>
+      </rdf:Alt>
+    </rdfs:label> 
+  </lom_life:Status>
+  <lom_life:Status rdf:ID="Revised" lm:orderingValue="30">
+    <rdfs:label>     
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Revised</rdf:li>
+	<rdf:li xml:lang="es">Revision</rdf:li>
+      </rdf:Alt>
+    </rdfs:label> 
+  </lom_life:Status>
+  <lom_life:Status rdf:ID="Unavailable" lm:orderingValue="40">
+    <rdfs:label>     
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Unavailable</rdf:li>
+	<rdf:li xml:lang="es">No Disponible</rdf:li>
+      </rdf:Alt>
+    </rdfs:label> 
+  </lom_life:Status>
+  
+  <rdf:Property rdf:ID="status">
+    <rdfs:range rdf:resource="#Status"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Status</rdf:li>
+	<rdf:li xml:lang="es">Estatus</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The status of the object.</rdf:li>
+	<rdf:li xml:lang="es">El estatus del objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+  
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Description>
+
+
+
+  <rdf:Property rdf:ID="unknown">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="initiator">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="terminator">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="validator">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="editor">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="graphicaldesigner">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="technicalimplementer">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="contentprovider">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="technicalvalidator">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="educationalvalidator">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="scriptwriter">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="instructionaldesigner">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+  </rdf:Property>
+
+</rdf:RDF>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+   xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+   xmlns:lom_ann="http://www.imsproject.org/rdf/imsmd_annotationv1p2#" 
+   xmlns:lom_cls="http://www.imsproject.org/rdf/imsmd_classificationv1p2#"
+   xmlns:lom_edu="http://www.imsproject.org/rdf/imsmd_educationalv1p2#"
+   xmlns:lom_gen="http://www.imsproject.org/rdf/imsmd_generalv1p2#" 
+   xmlns:lom_life="http://www.imsproject.org/rdf/imsmd_lifecyclev1p2#"
+   xmlns:lom_meta="http://www.imsproject.org/rdf/imsmd_metametadatav1p2#"
+   xmlns:lom_rel="http://www.imsproject.org/rdf/imsmd_relationv1p2#"
+   xmlns:lom_rights="http://www.imsproject.org/rdf/imsmd_rightsv1p2#"
+   xmlns:lom_tech="http://www.imsproject.org/rdf/imsmd_technicalv1p2#"
+   xmlns:lm="http://www.dcc.uchile.cl/lessonmapper#">
+  
+ 
+  <lom_edu:Difficulty rdf:ID="VeryEasy" >
+    <lm:icon rdf:value="resources/icons/MuyFacil.png"/>    
+  </lom_edu:Difficulty>
+   <lom_edu:Difficulty rdf:ID="Easy" >
+    <lm:icon rdf:value="resources/icons/Facil.png"/>    
+  </lom_edu:Difficulty>
+  <lom_edu:Difficulty rdf:ID="MediumDifficulty">
+     <lm:icon rdf:value="resources/icons/Media.png"/>    
+  </lom_edu:Difficulty>
+  <lom_edu:Difficulty rdf:ID="Difficult">
+     <lm:icon rdf:value="resources/icons/Dificil.png"/>    
+  </lom_edu:Difficulty>
+  <lom_edu:Difficulty rdf:ID="VeryDifficult">
+     <lm:icon rdf:value="resources/icons/MuyDificil.png"/>    
+  </lom_edu:Difficulty>
+  
+  
+ <lom_edu:InteractivityType rdf:ID="Active" >
+ <lm:icon rdf:value="resources/icons/Activa.png"/>
+  </lom_edu:InteractivityType>
+  <lom_edu:InteractivityType rdf:ID="Expositive" >
+ <lm:icon rdf:value="resources/icons/Expositiva.png"/>
+  </lom_edu:InteractivityType>
+  <lom_edu:InteractivityType rdf:ID="Mixed" >
+ <lm:icon rdf:value="resources/icons/Mixta.png"/>
+  </lom_edu:InteractivityType>
+ 
+ 
+ 
+ 
+  <lom_edu:SemanticDensity rdf:ID="VeryLowDensity" >
+     <lm:icon rdf:value="resources/icons/DensidadMuyBaja.png"/>
+  </lom_edu:SemanticDensity>
+  <lom_edu:SemanticDensity rdf:ID="LowDensity" >
+     <lm:icon rdf:value="resources/icons/DensidadBaja.png"/>
+  </lom_edu:SemanticDensity>
+  <lom_edu:SemanticDensity rdf:ID="MediumDensity" >
+    <lm:icon rdf:value="resources/icons/DensidadMedia.png"/>
+  </lom_edu:SemanticDensity>
+  <lom_edu:SemanticDensity rdf:ID="HighDensity" >
+     <lm:icon rdf:value="resources/icons/DensidadAlta.png"/>
+  </lom_edu:SemanticDensity>
+  <lom_edu:SemanticDensity rdf:ID="VeryHighDensity" >
+    <lm:icon rdf:value="resources/icons/DensidadMuyAlta.png"/>
+  </lom_edu:SemanticDensity>
+ 
+ 
+ <lom_edu:IntendedEndUserRole rdf:ID="Teacher">
+       <lm:icon rdf:value="resources/icons/Profesor.png"/>
+  </lom_edu:IntendedEndUserRole>
+  <lom_edu:IntendedEndUserRole rdf:ID="Author">
+   
+  </lom_edu:IntendedEndUserRole>
+  <lom_edu:IntendedEndUserRole rdf:ID="Learner">
+      <lm:icon rdf:value="resources/icons/Aprendiz.png"/>
+  </lom_edu:IntendedEndUserRole>
+  <lom_edu:IntendedEndUserRole rdf:ID="Manager">
+      <lm:icon rdf:value="resources/icons/Organizador.png"/>
+  </lom_edu:IntendedEndUserRole>
+ 
+ 
+</rdf:RDF>

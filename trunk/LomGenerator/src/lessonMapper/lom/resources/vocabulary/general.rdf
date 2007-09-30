@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+     xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+     xmlns:lom_gen="http://www.imsproject.org/rdf/imsmd_generalv1p2#">
+
+  <rdf:Property rdf:ID="catalogentry">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Catalog Entry</rdf:li>
+	<rdf:li xml:lang="es">Entrada Catalogo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">An entry in a catalog.</rdf:li>
+	<rdf:li xml:lang="es">Una Entrada en el Catalogo</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+  <rdfs:Class rdf:ID="Structure">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Structure types</rdf:li>
+	<rdf:li xml:lang="es">Tipo de estructura</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent organizational structures</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan estructures organizacionales</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_gen:Structure rdf:ID="Collection">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Collection</rdf:li>
+	<rdf:li xml:lang="es">Collección</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:Structure>
+  <lom_gen:Structure rdf:ID="Mixed">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Mixted</rdf:li>
+	<rdf:li xml:lang="es">Mixto</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:Structure>
+  <lom_gen:Structure rdf:ID="Linear">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Linear</rdf:li>
+	<rdf:li xml:lang="es">Lineal</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:Structure>
+  <lom_gen:Structure rdf:ID="Hierarchical">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Hierarchical</rdf:li>
+	<rdf:li xml:lang="es">Jerarquico</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:Structure>
+  <lom_gen:Structure rdf:ID="Networked">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Networked</rdf:li>
+	<rdf:li xml:lang="es">En Red</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:Structure>
+  <lom_gen:Structure rdf:ID="Branched">
+   <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Branched</rdf:li>
+	<rdf:li xml:lang="es">Ramificado</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:Structure>
+  <lom_gen:Structure rdf:ID="Parceled">
+   <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Parceled</rdf:li>
+	<rdf:li xml:lang="es">Particionado</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:Structure>
+  <lom_gen:Structure rdf:ID="Atomic">
+   <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Atomic</rdf:li>
+	<rdf:li xml:lang="es">Atomico</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:Structure>
+
+  <rdf:Property rdf:ID="structure">
+    <rdfs:range rdf:resource="#Structure"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Structure</rdf:li>
+	<rdf:li xml:lang="es">Estructura</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+     <rdf:Alt>
+	<rdf:li xml:lang="en">Underlying organizational structure of the learning object.</rdf:li>
+	<rdf:li xml:lang="es">Estrucura organizacional del objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+
+  <rdfs:Class rdf:ID="AggregationLevel">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Aggregation Level</rdf:li>
+	<rdf:li xml:lang="es">Nivel de agregacion</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent aggregation levels.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan nivel de aggregacion</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_gen:AggregationLevel rdf:ID="Level1" lm:orderingValue="10">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Level 1</rdf:li>
+	<rdf:li xml:lang="es">Nivel 1</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:AggregationLevel>
+  <lom_gen:AggregationLevel rdf:ID="Level2" lm:orderingValue="20">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Level 2</rdf:li>
+	<rdf:li xml:lang="es">Nivel 2</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:AggregationLevel>
+  <lom_gen:AggregationLevel rdf:ID="Level3" lm:orderingValue="30">
+    <rdfs:label>    
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Level 3</rdf:li>
+	<rdf:li xml:lang="es">Nivel 3</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:AggregationLevel>
+  <lom_gen:AggregationLevel rdf:ID="Level4" lm:orderingValue="40">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Level 4</rdf:li>
+	<rdf:li xml:lang="es">Nivel 4</rdf:li>
+    </rdf:Alt>
+    </rdfs:label>
+  </lom_gen:AggregationLevel>
+  
+  
+  <rdf:Property rdf:ID="aggregationlevel">
+    <rdfs:range rdf:resource="#AggregationLevel"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Aggregation Level</rdf:li>
+	<rdf:li xml:lang="es">Nivel de aggregacion</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The functional granularity of the learning object.</rdf:li>
+	<rdf:li xml:lang="es">La granularidad funcional de un objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+   <rdf:Property rdf:ID="title">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Title</rdf:li>
+	<rdf:li xml:lang="es">Título</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The name assigned to this learning object</rdf:li>
+	<rdf:li xml:lang="es">El nombre asignado a este objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+   <rdf:Property rdf:ID="keyword">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Keywords</rdf:li>
+	<rdf:li xml:lang="es">Palabras Clave</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Keywords describing the main topics of this learning object</rdf:li>
+	<rdf:li xml:lang="es">Palabras clave que describe el tema principal del objecto educativo</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+   <rdf:Property rdf:ID="description">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Description</rdf:li>
+	<rdf:li xml:lang="es">Descripción</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Decription of the content of this learning object</rdf:li>
+	<rdf:li xml:lang="es">Una descripcion textual del contenido de este objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+ <rdf:Property rdf:ID="language">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Language</rdf:li>
+	<rdf:li xml:lang="es">Idioma</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Main Language used in this learning object for communicating with the user</rdf:li>
+	<rdf:li xml:lang="es">Idioma humana predopminante en este objeto de aprendizaje para la comunicación con el usuario</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+ <rdf:Property rdf:ID="coverage">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Coverage</rdf:li>
+	<rdf:li xml:lang="es">Ámbito</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The time, culture, geography or region to which this learning object applies. </rdf:li>
+	<rdf:li xml:lang="es">La época, cultura, zona geográfica o región en la que es aplicable este objeto de aprendizaje </rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+
+
+</rdf:RDF>

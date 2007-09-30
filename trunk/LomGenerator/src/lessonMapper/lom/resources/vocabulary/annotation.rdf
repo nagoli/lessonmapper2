@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+     xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+     xmlns:lom_ann="http://www.imsproject.org/rdf/imsmd_annotationv1p2#">
+
+
+
+  <rdf:Property rdf:ID="annotation">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Annotation</rdf:li>
+	<rdf:li xml:lang="es">Anotación</rdf:li>
+      </rdf:Alt>
+     </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">This element provides comments on the educational use of this learning object.</rdf:li>
+	<rdf:li xml:lang="es">Este elemento da comentarios sobre el uso educacional de este objecto de aprendizaje </rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="person">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Person</rdf:li>
+	<rdf:li xml:lang="es">Persona</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+       <rdf:Alt>
+	<rdf:li xml:lang="en">The person who created the annotation.</rdf:li>
+	<rdf:li xml:lang="es">La persona que creo la anotación</rdf:li>
+      </rdf:Alt></rdfs:comment>
+  </rdf:Property>
+
+</rdf:RDF>

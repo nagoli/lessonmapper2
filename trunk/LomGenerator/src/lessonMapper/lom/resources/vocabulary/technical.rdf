@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+     xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+     xmlns:lom_tech="http://www.imsproject.org/rdf/imsmd_technicalv1p2#">
+
+
+  <dcq:FormatScheme rdf:ID="NonDigital">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Non-digital formats</rdf:li>
+	<rdf:li xml:lang="es">Formato no digital</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent non-digital formats.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan formato no digital.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </dcq:FormatScheme>
+  
+  <rdfs:Class rdf:ID="ByteSize">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Size in bytes.</rdf:li>
+	<rdf:li xml:lang="es">Tamaño en byte</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en"> Instances of this class represent sizes in bytes
+	  Use an rdf:value pointing to the size as a positive integer.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan tamaño en byte.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+
+  <rdf:Property rdf:ID="location">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Location</rdf:li>
+	<rdf:li xml:lang="es">Direccion</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Location of an object</rdf:li>
+	<rdf:li xml:lang="es">Dirreccion de un objeto de aprendizage</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+  <rdfs:Class rdf:ID="TechnologyRequirement">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Technology</rdf:li>
+	<rdf:li xml:lang="es">Technologia</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class are technology requirements such as operating systems or browsers.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase son requisitos technologicos tal que el systema operativo o navigator</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="OperatingSystemRequirement">
+    <rdfs:subClassOf rdf:resource="#TechnologyRequirement"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Operating Systems</rdf:li>
+	<rdf:li xml:lang="es">Sistema operativo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class are operating system versions.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase son systema operativo.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="BrowserRequirement">
+    <rdfs:subClassOf rdf:resource="#TechnologyRequirement"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Browsers</rdf:li>
+	<rdf:li xml:lang="es">Navigators</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class are browser versions.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase son version de navigatores</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="PC-DOS">
+    <rdfs:subClassOf rdf:resource="#OperatingSystemRequirement"/>
+    <rdfs:label>PC-DOS</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of PC-DOS.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="MacOS">
+    <rdfs:subClassOf rdf:resource="#OperatingSystemRequirement"/>
+    <rdfs:label>MacOS</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of MacOS.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Unix">
+    <rdfs:subClassOf rdf:resource="#OperatingSystemRequirement"/>
+    <rdfs:label>Unix</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of Unix.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Multi-OS">
+    <rdfs:subClassOf rdf:resource="#OperatingSystemRequirement"/>
+    <rdfs:label>Multi-OS</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of more than one OS.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="None">
+    <rdfs:subClassOf rdf:resource="#OperatingSystemRequirement"/>
+    <rdfs:label>None</rdfs:label>
+    <rdfs:comment>Instances of this class are no operating system at all (empty class).</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Any">
+    <rdfs:subClassOf rdf:resource="#BrowserRequirement"/>
+    <rdfs:label>MS-Windows</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of any browser.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="NetscapeCommunicator">
+    <rdfs:subClassOf rdf:resource="#BrowserRequirement"/>
+    <rdfs:label>Netscape Communicator</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of Netscape.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="MicrosoftInternetExplorer">
+    <rdfs:subClassOf rdf:resource="#BrowserRequirement"/>
+    <rdfs:label>Microsoft InternetExplorer</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of Internet Explorer.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Opera">
+    <rdfs:subClassOf rdf:resource="#BrowserRequirement"/>
+    <rdfs:label>Opera</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of Opera.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Amaya">
+    <rdfs:subClassOf rdf:resource="#BrowserRequirement"/>
+    <rdfs:label>Amaya</rdfs:label>
+    <rdfs:comment>Instances of this class are versions of Amaya.</rdfs:comment>
+  </rdfs:Class>
+
+
+  <rdf:Property rdf:ID="requirement">
+    <rdfs:range rdf:resource="#TechnologyRequirement"/>
+    <rdfs:label>Requirement</rdfs:label>
+    <rdfs:comment>A required technology.</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="operatingsystem">
+    <rdfs:subPropertyOf rdf:resource="#requirement"/>
+    <rdfs:range rdf:resource="#OperatingSystemRequirement"/>
+    <rdfs:label>Operating system requirement</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:ID="browser">
+    <rdfs:subPropertyOf rdf:resource="#requirement"/>
+    <rdfs:range rdf:resource="#BrowserRequirement"/>
+    <rdfs:label>A browser requirement</rdfs:label>
+  </rdf:Property>
+
+
+  <rdf:Property rdf:ID="minimumversion">
+    <rdfs:domain rdf:resource="#TechnologyRequirement"/>
+    <rdfs:label>A minimum version requirement</rdfs:label>
+  </rdf:Property>
+
+
+  <rdf:Property rdf:ID="maximumversion">
+    <rdfs:domain rdf:resource="#TechnologyRequirement"/>
+    <rdfs:label>A maximum version requirement</rdfs:label>
+  </rdf:Property>
+
+
+
+  <rdf:Property rdf:ID="installationremarks">
+    <rdfs:label>Other Platform Requirements</rdfs:label>
+  </rdf:Property>
+
+
+  <rdf:Property rdf:ID="otherplatformrequirements">
+    <rdfs:label>Other Platform Requirements</rdfs:label>
+  </rdf:Property>
+
+ <rdf:Property rdf:ID="format">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Format</rdf:li>
+	<rdf:li xml:lang="es">Formato</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Technical datatype(s) of (all the componentsof) this learning object.  
+ </rdf:li>
+	<rdf:li xml:lang="es">El tipo de dato de este objeto de aprendizaje </rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+ <rdf:Property rdf:ID="size">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Size</rdf:li>
+	<rdf:li xml:lang="es">Tamaño</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The size of the digital learning object in bytes</rdf:li>
+	<rdf:li xml:lang="es">El tamaño del objeto de aprendizaje expresado en bytes</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+ <rdf:Property rdf:ID="requirement">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Requirements</rdf:li>
+	<rdf:li xml:lang="es">Requisitos</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The technical capabilities necessary for using this learning object.  
+</rdf:li>
+	<rdf:li xml:lang="es">La capacidad tecnica necesaria para usar este objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+ <rdf:Property rdf:ID="installationremarks">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Installation Remarks</rdf:li>
+	<rdf:li xml:lang="es">Notas de Instalación</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Description of how to install this learning object</rdf:li>
+	<rdf:li xml:lang="es">Descripción de como instalar este objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+ <rdf:Property rdf:ID="duration">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Duration</rdf:li>
+	<rdf:li xml:lang="es">Duración</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Time a continuous learning object takes when played at intended speed. </rdf:li>
+	<rdf:li xml:lang="es">El tiempo que dura un objeto educativo continuo cuando se reproduce a su velocidad normal. </rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+
+</rdf:RDF>

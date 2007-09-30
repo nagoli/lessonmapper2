@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+     xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+     xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+     xmlns:lom_edu="http://www.imsproject.org/rdf/imsmd_educationalv1p2#">
+
+  <rdfs:Class rdf:ID="InteractivityType">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Interactivity types</rdf:li>
+	<rdf:li xml:lang="es">Tipo de Interactividad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent interactivity types.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan tipos de interactividad.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_edu:InteractivityType rdf:ID="Active" lm:orderingValue="25">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Active</rdf:li>
+	<rdf:li xml:lang="es">Activo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:InteractivityType>
+  <lom_edu:InteractivityType rdf:ID="Expositive" lm:orderingValue="10">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Expositive</rdf:li>
+	<rdf:li xml:lang="es">Expositivo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:InteractivityType>
+  <lom_edu:InteractivityType rdf:ID="Mixed" lm:orderingValue="15">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Mixed</rdf:li>
+	<rdf:li xml:lang="es">Mixto</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:InteractivityType>
+  
+
+
+  <rdf:Property rdf:ID="interactivitytype">
+    <rdfs:range rdf:resource="#InteractivityType"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Interactivity type</rdf:li>
+	<rdf:li xml:lang="es">Tipo de Interactividad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The flow of interaction between the learning object and the user.</rdf:li>
+	<rdf:li xml:lang="es">El flujo de interacción entre el objeto de aprendizaje y el usuario</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+  <!-- Perhaps this resource should be made subClassOf rdfs:Class instead?
+       Less evident, but more clean... -->
+
+  <dcq:TypeScheme rdf:ID="LearningResourceType">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Learning Resource Type</rdf:li>
+	<rdf:li xml:lang="es">Tipo de recurso de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent learning resource types.
+      Each such type should be an rdfs:Class that can be used as the value
+      of an rdf:type property.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representa el tipo de recurso educacional.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </dcq:TypeScheme>
+
+
+  <lom_edu:LearningResourceType rdf:ID="exercise">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Exercise</rdf:li>
+	<rdf:li xml:lang="es">Ejercicio</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="simulation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Simulation</rdf:li>
+	<rdf:li xml:lang="es">Simulacion</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="questionary">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Questionary</rdf:li>
+	<rdf:li xml:lang="es">Questionario</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="diagram">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Diagram</rdf:li>
+	<rdf:li xml:lang="es">Diagramo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="figure">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Figure</rdf:li>
+	<rdf:li xml:lang="es">Figura</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="graph">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Graph</rdf:li>
+	<rdf:li xml:lang="es">Grafo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="index">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Index</rdf:li>
+	<rdf:li xml:lang="es">Índice</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="slide">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Slide</rdf:li>
+	<rdf:li xml:lang="es">Diapositiva</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="table">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Table</rdf:li>
+	<rdf:li xml:lang="es">Tabla</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="narrativeText">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Narrative Text</rdf:li>
+	<rdf:li xml:lang="es">Texto Narrativo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="exam">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Exam</rdf:li>
+	<rdf:li xml:lang="es">Examen</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="experiment">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Experiment</rdf:li>
+	<rdf:li xml:lang="es">Experimento</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="problemStatement">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Problem</rdf:li>
+	<rdf:li xml:lang="es">Problema</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+  <lom_edu:LearningResourceType rdf:ID="selfAssesment">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Self Assesment</rdf:li>
+	<rdf:li xml:lang="es">Auto evaluación</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:LearningResourceType>
+
+ <rdf:Property rdf:ID="learningresourcetype">
+    <rdfs:range rdf:resource="#LearningResourceType"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Learning Resource Type</rdf:li>
+	<rdf:li xml:lang="es">Típo de recurso educativo</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en"> Specific kind of learning object. The most dominant kind shall be first. </rdf:li>
+	<rdf:li xml:lang="es"> El tipo específico de recurso educativo. El tipo predominante debe aparecer en primer lugar </rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+  <rdfs:Class rdf:ID="InteractivityLevel">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Interactivity levels</rdf:li>
+	<rdf:li xml:lang="es">Nivel de interactividad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent interactivity levels.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan niveles de interactividad.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_edu:InteractivityLevel rdf:ID="VeryLowInteractivity" lm:orderingValue="5">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Very Low Interactivity</rdf:li>
+	<rdf:li xml:lang="es">Interactividad muy baja</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:InteractivityLevel>
+  <lom_edu:InteractivityLevel rdf:ID="LowInteractivity" lm:orderingValue="10">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Low Interactivity</rdf:li>
+	<rdf:li xml:lang="es">Interactividad baja</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:InteractivityLevel>
+  <lom_edu:InteractivityLevel rdf:ID="MediumInteractivity" lm:orderingValue="15">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Medium Interactivity</rdf:li>
+	<rdf:li xml:lang="es">Interactividad Mediana</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:InteractivityLevel>
+  <lom_edu:InteractivityLevel rdf:ID="HighInteractivity" lm:orderingValue="20">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">High Interactivity</rdf:li>
+	<rdf:li xml:lang="es">Interactividad alta</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:InteractivityLevel>
+  <lom_edu:InteractivityLevel rdf:ID="VeryHighInteractivity" lm:orderingValue="25">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Very High Interactivity</rdf:li>
+	<rdf:li xml:lang="es">Interactividad muy alta</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:InteractivityLevel>
+  
+
+  <rdf:Property rdf:ID="interactivitylevel">
+    <rdfs:range rdf:resource="#InteractivityLevel"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Interactivity level</rdf:li>
+	<rdf:li xml:lang="es">Nivel de interactividad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The degree of interactivity between the end user and this learning object.</rdf:li>
+	<rdf:li xml:lang="es">El grado de interacividad entre el usuario final  el objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+  
+  <rdfs:Class rdf:ID="SemanticDensity">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Semantic Density</rdf:li>
+	<rdf:li xml:lang="es">Densidad semantica</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent semantic densities.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representa la densidad semantica.</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_edu:SemanticDensity rdf:ID="VeryLowDensity" lm:orderingValue="5">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Very Low Density</rdf:li>
+	<rdf:li xml:lang="es">Densidad muy baja</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:SemanticDensity>
+  <lom_edu:SemanticDensity rdf:ID="LowDensity" lm:orderingValue="10">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Low Density</rdf:li>
+	<rdf:li xml:lang="es">Densidad baja</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:SemanticDensity>
+  <lom_edu:SemanticDensity rdf:ID="MediumDensity" lm:orderingValue="15">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Medium Density</rdf:li>
+	<rdf:li xml:lang="es">Densidad medium</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:SemanticDensity>
+  <lom_edu:SemanticDensity rdf:ID="HighDensity" lm:orderingValue="20">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">High Density</rdf:li>
+	<rdf:li xml:lang="es">Densidad alta</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:SemanticDensity>
+  <lom_edu:SemanticDensity rdf:ID="VeryHighDensity" lm:orderingValue="25">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Very High Density</rdf:li>
+	<rdf:li xml:lang="es">Densidad muy alta</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:SemanticDensity>
+  
+  
+  <rdf:Property rdf:ID="semanticdensity">
+    <rdfs:range rdf:resource="#SemanticDensity"/>
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Semantic Density</rdf:li>
+	<rdf:li xml:lang="es">Densidad semantica</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Amount of information conveyed by this learning object as compared to its size or duration.</rdf:li>
+	<rdf:li xml:lang="es">Quantidad de informacion contenida en este objeto de aprentizaje en proportion con su tamaño o duracion</rdf:li>
+      </rdf:Alt>
+</rdfs:comment>
+  </rdf:Property>
+
+  
+
+  <rdfs:Class rdf:ID="IntendedEndUserRole">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Intended end user role</rdf:li>
+	<rdf:li xml:lang="es">Role presupuesto del usuario final</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent intended end user roles.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan los roles de los presupuestos usuarios finales</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_edu:IntendedEndUserRole rdf:ID="Teacher">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Teacher</rdf:li>
+	<rdf:li xml:lang="es">Profesor</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:IntendedEndUserRole>
+  <lom_edu:IntendedEndUserRole rdf:ID="Author">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Author</rdf:li>
+	<rdf:li xml:lang="es">Autor</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:IntendedEndUserRole>
+  <lom_edu:IntendedEndUserRole rdf:ID="Learner">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Learner</rdf:li>
+	<rdf:li xml:lang="es">Aprendiz</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:IntendedEndUserRole>
+  <lom_edu:IntendedEndUserRole rdf:ID="Manager">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Manager</rdf:li>
+	<rdf:li xml:lang="es">Organizator</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:IntendedEndUserRole>
+  
+  
+  <rdf:Property rdf:ID="intendedenduserrole">
+    <rdfs:range rdf:resource="#IntendedEndUserRole"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Intended end user role</rdf:li>
+	<rdf:li xml:lang="es">Destinario</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Principal user(s) for which this learning object was designed</rdf:li>
+	<rdf:li xml:lang="es">Usuario principal para el que ha sido diseñado este objeto de aprendizaje </rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+  
+  <rdfs:Class rdf:ID="Context">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Learning Context</rdf:li>
+	<rdf:li xml:lang="es">Contexto de Aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent learning contexts.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan contextos de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_edu:Context rdf:ID="PrimaryEducation" lm:orderingValue="5">
+    <rdfs:label>    
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Primary Education</rdf:li>
+	<rdf:li xml:lang="es">Educacion Basica</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="SecondaryEducation" lm:orderingValue="10">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Secondary Education</rdf:li>
+	<rdf:li xml:lang="es">Educacion Media</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="HigherEducation" lm:orderingValue="15">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Higher Education</rdf:li>
+	<rdf:li xml:lang="es">Educacion Superior</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="UniversityFirstCycle" lm:orderingValue="20">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Unversity First Cycle</rdf:li>
+	<rdf:li xml:lang="es">Primer cyclo Universitario (Plan Comun)</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="UniversitySecondCycle" lm:orderingValue="25">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">University Second Cycle</rdf:li>
+	<rdf:li xml:lang="es">Segundo Cyclo Universitario (Especializacion)</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="UniversityPostGrade" lm:orderingValue="30">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">University PostGrade</rdf:li>
+	<rdf:li xml:lang="es">Postgrado Universitario</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="TechnicalSchoolFirstCycle" lm:orderingValue="18">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Technical School First Cycle</rdf:li>
+	<rdf:li xml:lang="es">Primer Cyclo de Institudo Profesional (Plan Comun)</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="TechnicalSchoolSecondCycle" lm:orderingValue="23">
+    <rdfs:label>    
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Technical School Second Cycle</rdf:li>
+	<rdf:li xml:lang="es">Segundo Cyclo de Institudo Profesional (Especializacion)</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="ContinuousFormation" lm:orderingValue="19">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Continuous Formation</rdf:li>
+	<rdf:li xml:lang="es">Segundo Cyclo de Institudo Profesional (Especializacion)</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  <lom_edu:Context rdf:ID="VocationalTraining" lm:orderingValue="26">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Vocational Training</rdf:li>
+	<rdf:li xml:lang="es">Practica Vocacional</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Context>
+  
+  
+  <rdf:Property rdf:ID="context">
+    <rdfs:range rdf:resource="#Context"/>
+    <rdfs:label>
+      <rdf:Alt>
+      <rdf:li xml:lang="en">Learning Context</rdf:li>
+      <rdf:li xml:lang="es">Contexto de Aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The principal environment within which the learning and use of this learning object is intended to take place.</rdf:li>
+	<rdf:li xml:lang="es">El contexto principal en el cual el uso de este objeto de aprendizaje es previsto</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+  <rdf:Property rdf:ID="typicalagerange">
+    <rdfs:label>
+      <rdf:Alt>
+      <rdf:li xml:lang="en">Typical Age Range</rdf:li>
+      <rdf:li xml:lang="es">Rango de edad tipica</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en"> Age of the typical intended user.</rdf:li>
+	<rdf:li xml:lang="es">Edad tipica del usuario final</rdf:li>
+      </rdf:Alt>
+     </rdfs:comment>
+  </rdf:Property>
+
+
+  <rdfs:Class rdf:ID="Difficulty">
+    <rdfs:label><rdf:Alt>
+	<rdf:li xml:lang="en">Difficulty</rdf:li>
+	<rdf:li xml:lang="es">Dificuldad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Instances of this class represent difficulties.</rdf:li>
+	<rdf:li xml:lang="es">Instancias de esta clase representan dificuldades</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <lom_edu:Difficulty rdf:ID="VeryEasy" lm:orderingValue="5">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Very Easy</rdf:li>
+	<rdf:li xml:lang="es">Muy Facil</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Difficulty>
+  <lom_edu:Difficulty rdf:ID="Easy" lm:orderingValue="10">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Easy</rdf:li>
+	<rdf:li xml:lang="es">Facil</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Difficulty>
+  <lom_edu:Difficulty rdf:ID="MediumDifficulty" lm:orderingValue="15">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Medium Difficulty</rdf:li>
+	<rdf:li xml:lang="es">Difuldad Media</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Difficulty>
+  <lom_edu:Difficulty rdf:ID="Difficult" lm:orderingValue="20">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Difficult</rdf:li>
+	<rdf:li xml:lang="es">Dificil</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Difficulty>
+  <lom_edu:Difficulty rdf:ID="VeryDifficult" lm:orderingValue="25">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Very Difficult</rdf:li>
+	<rdf:li xml:lang="es">Muy Dificil</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </lom_edu:Difficulty>
+
+
+  <rdf:Property rdf:ID="difficulty">
+    <rdfs:range rdf:resource="#Difficulty"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Difficulty</rdf:li>
+	<rdf:li xml:lang="es">Dificuldad</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">This element defines how hard it is to work through this learning object for the typical target audience.</rdf:li>
+	<rdf:li xml:lang="es">Este elemento define la dificuldad del trabajo por este objeto de aprendizaje para la audiancia tipica</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+  
+  <rdf:Property rdf:ID="typicallearningtime">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Typical Learning Time</rdf:li>
+	<rdf:li xml:lang="es">Tiempo tipico de estudio</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Approximate or typical time it takes to work with this learning object.</rdf:li>
+	<rdf:li xml:lang="es">Tiempo aproximado necesario para cumplir con el trabajo propuesto por este objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+  
+  
+  
+  <rdf:Property rdf:ID="description">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Educational description</rdf:li>
+	<rdf:li xml:lang="es">Descripcion pedagogica</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Comments on how this learning object is to be used.</rdf:li>
+	<rdf:li xml:lang="es">Commentarios sobre la manera con cual este objeto de aprendizaje tiene que estar usado</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+
+
+  <rdf:Property rdf:ID="language">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/language"/>
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Language</rdf:li>
+	<rdf:li xml:lang="es">Idioma</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+    <rdfs:comment> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">The human language used by the typical intended user of this learning object.</rdf:li>
+	<rdf:li xml:lang="es">La idioma usada por el usuario de este objeto de aprendizaje</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+  
+  
+</rdf:RDF>

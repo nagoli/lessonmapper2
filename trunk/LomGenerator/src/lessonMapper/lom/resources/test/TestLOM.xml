@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd">
+    <general>
+        <identifier>LOMTest0</identifier>
+        <title>
+            <langstring xml:lang="en">LOMTest0</langstring>
+        </title>
+    </general>
+    <relation>
+        <kind>
+            <source>
+                <langstring xml:lang="en">LOMv1.0</langstring>
+            </source>
+            <value>
+                <langstring xml:lang="x-none">haspart</langstring>
+            </value>
+        </kind>
+        <resource>
+            <description>
+                <langstring xml:lang="en"></langstring>
+            </description>
+            <catalogentry>
+                <catalog></catalog>
+                <entry>
+                    <langstring xml:lang="en">LOMTest2</langstring>
+                </entry>
+            </catalogentry>
+        </resource>
+    </relation>
+
+
+</lom>
+

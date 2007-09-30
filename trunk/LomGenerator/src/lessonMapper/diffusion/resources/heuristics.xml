@@ -1,0 +1,197 @@
+<heuristic>
+   
+    <!-- general language-->
+   
+    <restriction attribute="general/language" relation="isPartOf">
+        <![CDATA[     'contained': INTERSECTION(vij) ]]>
+    </restriction>
+    <restriction attribute="general/language" relation="haspart">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>
+     
+     
+   <!-- general/keyword-->
+   
+   <!-- general/coverage-->
+ 
+    <restriction attribute="general/coverage" relation="summarizedBy">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>    
+   
+    <restriction attribute="general/coverage" relation="ispartof">
+       <![CDATA[     'contained': INTERSECTION(vij) ]]>
+    </restriction>
+    <restriction attribute="general/coverage" relation="haspart">
+       <![CDATA[     'contains': UNION(vij) ]]>
+    </restriction>
+  
+    <!-- general/structure-->
+   
+    <!-- general/aggregationlevel-->
+    
+    <restriction attribute="general/aggregationlevel" relation="introducesTo">
+            <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="introducedby">
+             <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="assessedby">
+           <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+     <restriction attribute="general/aggregationlevel" relation="assesses">
+            <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="summarizedBy">
+           <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="summarizes">
+          <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="hasPart">
+            <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+     <restriction attribute="general/aggregationlevel" relation="isPartOf">
+           <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    
+    
+    <!-- educational/interactivitytype-->
+   
+    <restriction attribute="educational/interactivityType" relation="examplifiedby">
+       <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/interactivityType" relation="abstractedby">
+       <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+
+
+    <!-- educational/learningresourceType-->
+    
+    <restriction attribute="educational/learningresourceType" relation="abstractedby">
+            <![CDATA[   'contained': 'exercise,simulation,diagram,figure,graph,slide,table,narrativeText,experiment,problemStatement,selfAssesment' ]]>
+    </restriction>
+    <restriction attribute="educational/learningresourceType" relation="examplifiedby">
+             <![CDATA[   'contained': 'questionary,diagram,figure,graph,index,slide,table,narrativeText,problemStatement,selfAssesment'  ]]>
+    </restriction>
+    <restriction attribute="educational/learningresourceType" relation="explainedBy">
+          <![CDATA[   'contained': 'exercise,simulation,diagram,figure,graph,slide,table,narrativeText,experiment,problemStatement,selfAssesment' ]]>
+    </restriction>
+     <restriction attribute="educational/learningresourceType" relation="explains">
+             <![CDATA[   'contained': 'questionary,diagram,figure,graph,index,slide,table,narrativeText,problemStatement,selfAssesment'  ]]>
+    </restriction>
+
+    
+
+    <!-- educational/interactivitylevel-->
+    
+   
+
+    <!-- educational/semanticdensity-->
+    
+    <restriction attribute="educational/semanticdensity" relation="introducesTo">
+            <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/semanticdensity" relation="introducedby">
+            <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/semanticdensity" relation="summarizedBy">
+             <![CDATA[    '>=': MAX(vij)  ]]>
+    </restriction>
+    <restriction attribute="educational/semanticdensity" relation="summarizes">
+             <![CDATA[    '<=': MIN(vij)  ]]>
+    </restriction>
+ 
+    
+   <!-- educational/intendedenduserrole-->
+   
+    <restriction attribute="educational/intendedenduserrole" relation="assesses">
+            <![CDATA[   'contained': 'learner' ]]>
+    </restriction>
+
+  
+   <!-- educational/context-->
+    
+   <restriction attribute="educational/context" relation="isbackgroundfor">
+             <![CDATA[   '<=': MIN(vij) ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="hasBackgroundIn">
+           <![CDATA[   '>=': MAX(vij) ]]>
+    </restriction>
+    <restriction attribute="educational/context" relation="isPartOf">
+             <![CDATA[   '<=': MIN(vij) ]]>
+    </restriction>
+     <restriction attribute="educational/context" relation="hasPart">
+           <![CDATA[   '>=': MAX(vij) ]]>
+    </restriction>
+ 
+    <!-- educational/typicallearningtime-->
+    <restriction attribute="educational/typicallearningtime" relation="introducesTo">
+             <![CDATA[   '<=': SUM(vij) ]]>
+    </restriction>
+   
+     <restriction attribute="educational/typicallearningtime" relation="assesses">
+           <![CDATA[   '<=': SUM(vij) ]]>
+    </restriction>
+    <restriction attribute="educational/typicallearningtime" relation="summarizes">
+              <![CDATA[   '<=': SUM(vij) ]]>
+    </restriction>
+    
+    <restriction attribute="educational/typicallearningtime" relation="isPartOf">
+              <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+    
+
+   
+   <!-- educational/language-->
+
+ 
+   <!-- educational/typicalagerange  -->
+ 
+
+   
+   <!-- educational/difficulty   -->
+    <restriction attribute="educational/difficulty" relation="introducesTo">
+             <![CDATA[   '<=': MIN(vij) ]]>
+    </restriction>
+ 
+     <restriction attribute="educational/difficulty" relation="assesses">
+           <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+    
+    <restriction attribute="educational/difficulty" relation="supports">
+           <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+
+    <restriction attribute="educational/difficulty" relation="summarizes">
+               <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+
+     <restriction attribute="educational/difficulty" relation="hasPart">
+            <![CDATA[   '>=': MIN(vij) ]]>
+    </restriction>
+    
+    
+   <!-- rights/cost-->
+   
+
+    <restriction attribute="rights/cost" relation="isPartOf">
+           <![CDATA[   '<=': MIN(vij) ]]>
+    </restriction>
+     <restriction attribute="rights/cost" relation="hasPart">
+       <![CDATA[   '>=': MAX(vij) ]]>
+    </restriction>
+ 
+    
+             
+   <!-- rights/copyrightandotherrestrictions-->
+   
+
+    <restriction attribute="rights/copyrightandotherrestrictions" relation="isPartOf">
+           <![CDATA[   '<=': MAX(vij) ]]>
+    </restriction>
+     <restriction attribute="rights/copyrightandotherrestrictions" relation="hasPart">
+       <![CDATA[   '>=': MIN(vij) ]]>
+    </restriction>
+
+</heuristic>
+

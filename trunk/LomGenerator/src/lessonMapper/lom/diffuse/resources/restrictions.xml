@@ -1,0 +1,197 @@
+<heuristic>
+   
+    <!-- general language-->
+   
+    <restriction attribute="general/language" relation="isPartOf">
+            CONTAINED INTERSECTION 
+    </restriction>
+    <restriction attribute="general/language" relation="haspart">
+           CONTAINS UNION 
+    </restriction>
+     
+     
+   <!-- general/keyword-->
+   
+   <!-- general/coverage-->
+ 
+    <restriction attribute="general/coverage" relation="summarizedBy">
+           CONTAINS UNION 
+    </restriction>    
+   
+    <restriction attribute="general/coverage" relation="ispartof">
+           CONTAINED INTERSECTION 
+    </restriction>
+    <restriction attribute="general/coverage" relation="haspart">
+           CONTAINS UNION 
+    </restriction>
+  
+    <!-- general/structure-->
+   
+    <!-- general/aggregationlevel-->
+    
+    <restriction attribute="general/aggregationlevel" relation="introducesTo">
+               INFEQ MIN  
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="introducedby">
+                SUPEQ MAX  
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="assessedby">
+              SUPEQ MAX  
+    </restriction>
+     <restriction attribute="general/aggregationlevel" relation="assesses">
+               INFEQ MIN  
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="summarizedBy">
+              SUPEQ MAX  
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="summarizes">
+             INFEQ MIN  
+    </restriction>
+    <restriction attribute="general/aggregationlevel" relation="hasPart">
+               SUPEQ MAX  
+    </restriction>
+     <restriction attribute="general/aggregationlevel" relation="isPartOf">
+              INFEQ MIN  
+    </restriction>
+    
+    
+    <!-- educational/interactivitytype-->
+   
+    <restriction attribute="educational/interactivityType" relation="examplifiedby">
+          INFEQ MIN  
+    </restriction>
+    <restriction attribute="educational/interactivityType" relation="abstractedby">
+          SUPEQ MAX  
+    </restriction>
+
+
+    <!-- educational/learningresourceType-->
+    
+    <restriction attribute="educational/learningresourceType" relation="abstractedby">
+              CONTAINED 'exercise,simulation,diagram,figure,graph,slide,table,narrativeText,experiment,problemStatement,selfAssesment' 
+    </restriction>
+    <restriction attribute="educational/learningresourceType" relation="examplifiedby">
+               CONTAINED 'questionary,diagram,figure,graph,index,slide,table,narrativeText,problemStatement,selfAssesment'  
+    </restriction>
+    <restriction attribute="educational/learningresourceType" relation="explainedBy">
+            CONTAINED 'exercise,simulation,diagram,figure,graph,slide,table,narrativeText,experiment,problemStatement,selfAssesment' 
+    </restriction>
+     <restriction attribute="educational/learningresourceType" relation="explains">
+               CONTAINED 'questionary,diagram,figure,graph,index,slide,table,narrativeText,problemStatement,selfAssesment'  
+    </restriction>
+
+    
+
+    <!-- educational/interactivitylevel-->
+    
+   
+
+    <!-- educational/semanticdensity-->
+    
+    <restriction attribute="educational/semanticdensity" relation="introducesTo">
+               INFEQ MIN  
+    </restriction>
+    <restriction attribute="educational/semanticdensity" relation="introducedby">
+               SUPEQ MAX  
+    </restriction>
+    <restriction attribute="educational/semanticdensity" relation="summarizedBy">
+                SUPEQ MAX  
+    </restriction>
+    <restriction attribute="educational/semanticdensity" relation="summarizes">
+                INFEQ MIN  
+    </restriction>
+ 
+    
+   <!-- educational/intendedenduserrole-->
+   
+    <restriction attribute="educational/intendedenduserrole" relation="assesses">
+              CONTAINED 'learner' 
+    </restriction>
+
+  
+   <!-- educational/context-->
+    
+   <restriction attribute="educational/context" relation="isbackgroundfor">
+               INFEQ MIN 
+    </restriction>
+    <restriction attribute="educational/context" relation="hasBackgroundIn">
+             SUPEQ MAX 
+    </restriction>
+    <restriction attribute="educational/context" relation="isPartOf">
+               INFEQ MIN 
+    </restriction>
+     <restriction attribute="educational/context" relation="hasPart">
+             SUPEQ MAX 
+    </restriction>
+ 
+    <!-- educational/typicallearningtime-->
+  <!--  <restriction attribute="educational/typicallearningtime" relation="introducesTo">
+               INFEQ SUM(vij) 
+    </restriction>
+   
+     <restriction attribute="educational/typicallearningtime" relation="assesses">
+             INFEQ SUM(vij) 
+    </restriction>
+    <restriction attribute="educational/typicallearningtime" relation="summarizes">
+                INFEQ SUM(vij) 
+    </restriction>
+  -->
+    <restriction attribute="educational/typicallearningtime" relation="isPartOf">
+                INFEQ MAX 
+    </restriction>
+    
+
+   
+   <!-- educational/language-->
+
+ 
+   <!-- educational/typicalagerange  -->
+ 
+
+   
+   <!-- educational/difficulty   -->
+    <restriction attribute="educational/difficulty" relation="introducesTo">
+               INFEQ MIN 
+    </restriction>
+ 
+     <restriction attribute="educational/difficulty" relation="assesses">
+             INFEQ MAX 
+    </restriction>
+    
+    <restriction attribute="educational/difficulty" relation="supports">
+             INFEQ MAX 
+    </restriction>
+
+    <restriction attribute="educational/difficulty" relation="summarizes">
+                 INFEQ MAX 
+    </restriction>
+
+     <restriction attribute="educational/difficulty" relation="hasPart">
+              SUPEQ MIN 
+    </restriction>
+    
+    
+   <!-- rights/cost-->
+   
+
+    <restriction attribute="rights/cost" relation="isPartOf">
+             INFEQ MIN 
+    </restriction>
+     <restriction attribute="rights/cost" relation="hasPart">
+         SUPEQ MAX 
+    </restriction>
+ 
+    
+             
+   <!-- rights/copyrightandotherrestrictions-->
+   
+
+    <restriction attribute="rights/copyrightandotherrestrictions" relation="isPartOf">
+             INFEQ MAX 
+    </restriction>
+     <restriction attribute="rights/copyrightandotherrestrictions" relation="hasPart">
+         SUPEQ MIN 
+    </restriction>
+
+</heuristic>
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+  xmlns:lm="http://www.dcc.uchile.cl/lessonMapper#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcq="http://dublincore.org/2000/03/13/dcq#"
+   xmlns:lom="http://www.imsproject.org/rdf/imsmd_rootv1p2#"
+   xmlns:lom_cls="http://www.imsproject.org/rdf/imsmd_classificationv1p2#">
+  
+  
+  
+  <rdf:Property rdf:ID="classification">
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Classification</rdf:li>
+	<rdf:li xml:lang="es">Clasificación</rdf:li>
+      </rdf:Alt>
+     </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">This category describes where this learning object falls within a particular classification system.</rdf:li>
+	<rdf:li xml:lang="es">Esta categoria identifica este objecto de aprendizaje dentro de un systema de clasificación</rdf:li>
+      </rdf:Alt>
+    </rdfs:comment>
+  </rdf:Property>
+  
+  
+  
+  <rdf:Description about="http://purl.org/dc/elements/1.1/subject">
+    <rdfs:subPropertyOf rdf:resource="#classification"/>
+  </rdf:Description>
+
+  
+  <rdf:Property rdf:ID="prerequisite">
+    <rdfs:subPropertyOf rdf:resource="#classification"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Prerequisite</rdf:li>
+	<rdf:li xml:lang="es">Pre-requisito</rdf:li>
+      </rdf:Alt>
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="educationalobjective">
+    <rdfs:subPropertyOf rdf:resource="#classification"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Educational Objective</rdf:li>
+	<rdf:li xml:lang="es">Objetivo Educacional</rdf:li>
+      </rdf:Alt>      
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="accessibilityrestrictions">
+    <rdfs:subPropertyOf rdf:resource="#classification"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Accessibility Restrictions</rdf:li>
+	<rdf:li xml:lang="es">Restricciones de accesibilidad</rdf:li>
+      </rdf:Alt>   
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="educationallevel">
+    <rdfs:subPropertyOf rdf:resource="#classification"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Educational Level</rdf:li>
+	<rdf:li xml:lang="es">Nivel de educación</rdf:li>
+      </rdf:Alt>   
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="skilllevel">
+    <rdfs:subPropertyOf rdf:resource="#classification"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Skill Level</rdf:li>
+	<rdf:li xml:lang="es">Nivel de capacitación</rdf:li>
+      </rdf:Alt>   
+    </rdfs:label>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="securitylevel">
+    <rdfs:subPropertyOf rdf:resource="#classification"/>
+    <rdfs:label>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Security Level</rdf:li>
+	<rdf:li xml:lang="es">Nivel de seguridad</rdf:li>
+      </rdf:Alt>   
+    </rdfs:label>
+  </rdf:Property>
+  
+
+  <rdfs:Class rdf:ID="Taxonomy">
+    <rdfs:label>  
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Taxonomy</rdf:li>
+	<rdf:li xml:lang="es">Taxonomía</rdf:li>
+      </rdf:Alt>  
+    </rdfs:label>
+    <rdfs:comment><rdf:Alt>
+	<rdf:li xml:lang="en">A hierarchical taxonomy.</rdf:li>
+	<rdf:li xml:lang="es">Una taxonomía jerárquica</rdf:li>
+      </rdf:Alt>  
+    </rdfs:comment>
+  </rdfs:Class>
+  
+  <rdf:Property rdf:ID="taxon">
+    <rdfs:label> 
+      <rdf:Alt>
+	<rdf:li xml:lang="en">Taxon</rdf:li>
+	<rdf:li xml:lang="es">Taxon</rdf:li>
+      </rdf:Alt> 
+    </rdfs:label>
+    <rdfs:comment>
+      <rdf:Alt>
+	<rdf:li xml:lang="en">This property describes a particular term within a taxonomy. A taxon is a node
+	  that has a defined label or term.</rdf:li>
+	<rdf:li xml:lang="es">Esta propiedad describe un término particular dentro de una taxonomía.</rdf:li>
+      </rdf:Alt> 
+    </rdfs:comment>
+  </rdf:Property>
+</rdf:RDF>

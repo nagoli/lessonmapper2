@@ -1,0 +1,427 @@
+
+
+PARSER_BEGIN(RestrictionParser)
+
+package lessonMapper.diffusion.restriction;
+
+import java.io.StringReader;
+
+
+
+public class RestrictionParser {
+
+  private static int count=0;
+
+}
+
+PARSER_END(RestrictionParser)
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+}
+
+TOKEN :
+{
+
+  < max: "max">
+|
+  < min: "min">
+|
+  < union: "union">
+|
+  < inter: "intersection">
+|
+  < sum: "+">
+|
+  < div: "/">
+|
+  < prod: "*">
+|
+  < sub: "-">
+|
+  < MAX: "MAX">
+|
+  < MIN: "MIN">
+|
+  < UNION: "UNION">
+|
+  < INTER: "INTERSECTION">
+|
+  < SUM: "SUM">
+|
+  < DIV: "DIVISION">
+|
+  < PROD: "PRODUCT">
+|
+  < SUB: "SUBTRACTION">
+|
+  < OIJ: "oij">
+|
+  < VIJ: "vij">
+|
+  < LI: "li">
+|
+  < eq: "=">
+|
+  < inf: "<">
+|
+   < inf_eq: "<=">
+ |
+   < sup: ">">
+ |
+   < sup_eq: ">=">
+ |
+   < dif: "!=">
+ |
+   < contains: "contains">
+ |
+   < contained: "contained">
+|
+   < OR: "or">
+ |
+   < AND: "and">
+ |
+  < STRING: ["a"-"z","A"-"Z","_"] ( ["a"-"z","A"-"Z","_",",","0"-"9"] )* >
+|
+  < ATT_ID: ["a"-"z","A"-"Z","_"] ( ["a"-"z","A"-"Z","_","/","0"-"9"] )* >
+|
+  < NUM:  (["0"-"9"])+ >
+ |
+   < EQ: "'='">
+ |
+   < INF: "'<'">
+ |
+    < INF_EQ: "'<='">
+  |
+    < SUP: "'>'">
+  |
+    < SUP_EQ: "'>='">
+  |
+    < DIF: "'!='">
+  |
+    < CONTAINS: "'contains'">
+  |
+    < CONTAINED: "'contained'">
+
+}
+
+
+void  Heuristic(RestrictionHeuristicBuilder aBuilder) :
+{
+   String s;
+   String o;
+}
+{
+   { count = 0;}
+   o=InitRestrictionOperator(aBuilder) ":" s=FinalEquationAdd(aBuilder)  <EOF>
+   { aBuilder.setFinalStatement("return new lessonMapper.lom.LOMRestrictionValue("+o+","+s+");");
+   }
+}
+
+String RecurrentStatement(RestrictionHeuristicBuilder aBuilder) :
+{
+  String op;
+  String eq;
+  String cond=null;
+}
+{
+   op=RecursiveOperator() [ "[" cond=Condition() "]" ] "(" eq=EquationAdd() ")"
+   {
+   String id = "recurs"+count++;
+   aBuilder.addField("public lessonMapper.lom.LOMValue "+id+";");
+   String theRecurrentStatement = "if ("+id+" == null) "+id+"= "+eq+"; \n"+
+      "else "+id+" = "+id+"."+op+"("+eq+");";
+   if (cond != null) theRecurrentStatement = "if (("+cond+")&&("+aBuilder.getDefaultFusionStrategy()+")){"
+         +theRecurrentStatement+  "}";
+   else theRecurrentStatement = "if ("+aBuilder.getDefaultFusionStrategy()+"){"
+         +theRecurrentStatement+  "}";
+   aBuilder.addRecurrentStatement(theRecurrentStatement);
+   return id;
+   }
+}
+
+String Condition() :
+{
+String s;
+String l=null;
+String c=null;
+}
+{
+  s=SimpleCondition() [l=LogicOperator() c=Condition()]
+  {
+  if (l!=null) return s+l+c;
+   return s; }
+}
+
+String SimpleCondition() :
+{
+String e1;
+String c;
+String e2;
+
+}
+{
+   LOOKAHEAD(EquationAdd() ConditionOperator())
+   e1=EquationAdd() c=ConditionOperator() (e2=EquationAdd())
+   {return e1+"."+c+"("+e2+")";}
+   |
+   "(" c=Condition() ")" {return "("+c+")";}
+}
+
+String ConditionOperator() :
+{
+}
+{
+   <eq> {return "equals";}
+|
+   <inf> {return "inferior";}
+|
+   <inf_eq> {return "inferiorOrEqual";}
+ |
+   <sup> {return "superior";}
+ |
+   <sup_eq> {return  "superiorOrEqual";}
+ |
+   <dif> {return  "different";}
+   |
+   <contains> {return  "contains";}
+   |
+   <contained> {return  "contained";}
+}
+
+String RestrictionOperator() :
+{
+}
+{
+  <EQ> {return "EQ";}
+ |
+   <INF>{return "INF";}
+ |
+    <INF_EQ>{return "INF_EQ";}
+  |
+    <SUP>{return "SUP";}
+  |
+    <SUP_EQ>{return "SUP_EQ";}
+  |
+    <DIF>{return "DIF";}
+  |
+    <CONTAINS> {return "CONTAINS";}
+  |
+    <CONTAINED>{return "CONTAINED";}
+}
+
+
+String InitRestrictionOperator(RestrictionHeuristicBuilder aBuilder) :
+{
+String o;
+}
+{
+ o=RestrictionOperator()
+ {
+ aBuilder.setRestrictionOperator(o);
+ return o;
+ }
+ }
+
+String String() :
+{
+ Token id;
+}
+{
+  "'" id=<STRING> "'"
+  { return "new lessonMapper.lom.LOMValueVocabularySet(\"" + id.image + "\",ITSLOMAttribute)"; }
+}
+
+String LogicOperator() :
+{
+}
+{
+      <OR> {return " || ";}
+    |
+      <AND> {return " && ";}
+}
+
+String Attribute() :
+{
+ Token id;
+}
+{
+  id=<ATT_ID>
+  { return "lessonMapper.lom.LOMAttribute.getLOMAttribute(\""+id.image+"\")"; }
+}
+
+String RecursiveOperator() :
+{
+}
+{
+   <MAX> {return "max";}
+   | <MIN> {return "min";}
+   | <UNION> {return "union";}
+   | <INTER> {return "intersection";}
+   | <SUM>  {return "sum";}
+   | <DIV> {return "division";}
+   | <PROD> {return "product";}
+   | <SUB> {return "subtraction";}
+}
+
+String AdditiveOperator() :
+{
+}
+{
+    <union> {return "union";}
+   | <inter> {return "intersection";}
+   | <sum>  {return "sum";}
+   | <sub> {return "subtraction";}
+}
+
+String MultiplicativeOperator() :
+{
+}
+{
+     <div> {return "division";}
+   | <prod> {return "product";}
+}
+
+
+
+String EquationAdd() :
+{
+String theCall;
+String op;
+String e2;
+}
+{
+    theCall=EquationMul()
+    (
+    op=AdditiveOperator() e2=EquationMul()
+    {
+    theCall+="."+op+"("+e2+")";
+    }
+    )*
+    {return theCall;}
+
+}
+
+
+String EquationMul() :
+{
+String theCall;
+String op;
+String e2;
+}
+{
+    theCall=EquationUni()
+    (
+    op=MultiplicativeOperator() e2=EquationUni()
+    {
+    theCall+="."+op+"("+e2+")";
+    }
+    )*
+    {return theCall;}
+
+
+}
+
+String EquationUni() :
+{
+String e1;
+String e2;
+String n;
+String att;
+String s;
+String o;
+}
+{
+    <max> "(" e1=EquationAdd() "," e2=EquationAdd() ")"
+    {return e1+".max("+e2+")";}
+   |  <min> "(" e1=EquationAdd() "," e2=EquationAdd() ")"
+    {return e1+".min("+e2+")";}
+   | n=Numeric() { return n;}
+   | s=String() { return s;}
+   | <OIJ> {return "new lessonMapper.lom.LOMValueInt(oij,null)";}
+   | o=RestrictionOperator() {return "new lessonMapper.lom.LOMValueInt("+o+",null)";}
+   | <VIJ> {return "vij";}
+   | <LI> "." att=Attribute() {
+        return "lessonMapper.diffusion.Diffusion.ResVal(li,"+att+")";}
+   |"(" e1=EquationAdd() ")"
+          {return e1;}
+}
+
+
+String Numeric() :
+{
+Token t;
+boolean isPositive=true;
+}
+{
+  [ "-" {isPositive=false;} ] t=<NUM>
+  {
+  String theNum = "";
+  if (!isPositive) theNum+="-";
+  theNum += t.image;
+  return "new lessonMapper.lom.LOMValueInt("+theNum+",null)" ;}
+}
+
+
+
+
+String FinalEquationAdd(RestrictionHeuristicBuilder aBuilder) :
+{
+String theCall;
+String op;
+String e2;
+}
+{
+    theCall=FinalEquationMul(aBuilder)
+    (
+    op=AdditiveOperator() e2=FinalEquationMul(aBuilder)
+    {
+    theCall+="."+op+"("+e2+")";
+    }
+    )*
+    {return theCall;}
+
+}
+
+String FinalEquationMul(RestrictionHeuristicBuilder aBuilder) :
+{
+String theCall;
+String op;
+String e2;
+}
+{
+    theCall=FinalEquationUni(aBuilder)
+    (
+    op=MultiplicativeOperator() e2=FinalEquationUni(aBuilder)
+    {
+    theCall+="."+op+"("+e2+")";
+    }
+    )*
+    {return theCall;}
+
+}
+
+String FinalEquationUni(RestrictionHeuristicBuilder aBuilder) :
+{
+String id;
+String n;
+String e1;
+String e2;
+String s;
+}
+{    <max> "(" e1=FinalEquationAdd(aBuilder) "," e2=FinalEquationAdd(aBuilder) ")"
+    {return e1+".max("+e2+")";}
+   |  <min> "(" e1=FinalEquationAdd(aBuilder) "," e2=FinalEquationAdd(aBuilder) ")"
+    {return e1+".min("+e2+")";}
+   | id=RecurrentStatement(aBuilder) {return id;}
+   | s=String() { return s;}
+   | n=Numeric() { return n;}
+    |
+    "(" e1=FinalEquationAdd(aBuilder)
+    ")"
+    {return e1;}
+}
