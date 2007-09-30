@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Tue Apr 10 18:29:53 CLT 2007
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=/USERDISK/develop/lessonMapper2AJ/LessonMapper2_EN_07_04_10.jar
+manifest.mergeall=true
+manifest.mainclass=dcc.lessonMapper2.LessonMapper2
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=

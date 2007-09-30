@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="dcc/lessonMapper2/ui/lom/LOMUIFactory.java|dcc/lessonMapper2/ui/lom/update/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/capi.jar"/>
+	<classpathentry kind="lib" path="/LomGenerator/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="/LomGenerator/lib/saxpath.jar"/>
+	<classpathentry kind="lib" path="/LomGenerator/lib/jaxen-jdom.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Piccolo"/>
+	<classpathentry kind="lib" path="/LomGenerator/lib/jaxen-core.jar"/>
+	<classpathentry kind="lib" path="/LOR/lib/xmlrpc-1.2-patched.jar"/>
+	<classpathentry kind="lib" path="/LOR/lib/xmldb.jar" sourcepath="/USERDISK/develop/eXist/src"/>
+	<classpathentry kind="lib" path="/LOR/lib/jakarta-regexp-1.3.jar"/>
+	<classpathentry kind="lib" path="/LOR/lib/jakarta-bcel-20040329.jar"/>
+	<classpathentry kind="lib" path="/LOR/lib/exist.jar" sourcepath="/USERDISK/develop/eXist/src"/>
+	<classpathentry kind="lib" path="/Utils/lib/commons-io-1.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/LomGenerator"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/LOR"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Utils"/>
+	<classpathentry kind="lib" path="/Utils/lib/flanagan.jar"/>
+	<classpathentry kind="lib" path="/LomGenerator/lib/dfp.jar" sourcepath="/USERDISK/develop/dfp-1.0.4/src"/>
+	<classpathentry kind="lib" path="/LOR/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="/LOR/lib/xercesImpl.jar"/>
+	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="lib" path="/LOR/lib/xalan-2.7.0.jar"/>
+	<classpathentry kind="lib" path="/LomGenerator/lib/lucene-core-2.1.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/USERDISK/develop/lucene-2.1.0/docs/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/LOR/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="/LOR/lib/log4j-1.2.14.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Javassist"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MetadataDiffusion"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>
