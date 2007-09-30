@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: Olivier Motelet
+Main-Class: dcc.lessonMapper2.LessonMapper2
+
+
+
+
