@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {stop = id; }; 
+            CLASS = AMLauncher; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                menu = NSMenu; 
+                progress = NSProgressIndicator; 
+                statusText = NSTextField; 
+                stopButton = NSButton; 
+                view = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
