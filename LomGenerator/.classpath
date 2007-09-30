@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="lessonMapper/diffusion/fixpoint/ResValue.java|lessonMapper/diffusion/fixpoint/ResValueHolder.java|lessonMapper/query/LOMQueryOLD.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="lib/xalan.jar"/>
+	<classpathentry kind="lib" path="lib/saxpath.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-jdom.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-core.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Utils"/>
+	<classpathentry kind="lib" path="lib/dfp.jar" sourcepath="/USERDISK/develop/dfp-1.0.4/src"/>
+	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/LOR"/>
+	<classpathentry kind="lib" path="/LOR/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/LOR/lib/xalan-2.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-core-2.1.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/USERDISK/develop/lucene-2.1.0/docs/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/LOR/lib/jdom.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Javassist"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MetadataDiffusion"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>
