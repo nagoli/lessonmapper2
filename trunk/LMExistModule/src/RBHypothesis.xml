@@ -1,0 +1,417 @@
+<RankBoostRanker>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.ResLuceneRanker </class>
+      <LOMAttribute> <name>educational/learningresourcetype </name> </LOMAttribute>
+    </ranker>
+    <teta> -2 </teta>
+  </hypothesis>
+  <alpha> 0.3195551481074701 </alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -11 </teta>
+  </hypothesis>
+  <alpha> 0.08468209392826469 </alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -8 </teta>
+  </hypothesis>
+  <alpha>0.09781676735276137</alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -4 </teta>
+  </hypothesis>
+  <alpha>0.10583064942306011</alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -3 </teta>
+  </hypothesis>
+  <alpha>0.16232487469178056 </alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/intendedenduserrole</name> </LOMAttribute>
+    </ranker>
+    <teta> -164 </teta>
+  </hypothesis>
+  <alpha>0.026445726979342374 </alpha>
+</hypothesisAndAlpha>
+
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitylevel</name> </LOMAttribute>
+    </ranker>
+    <teta> -167 </teta>
+  </hypothesis>
+  <alpha>0.08748874363956827</alpha>
+</hypothesisAndAlpha>
+
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitylevel</name> </LOMAttribute>
+    </ranker>
+    <teta> -161 </teta>
+  </hypothesis>
+  <alpha>0.15502114794337166</alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitylevel</name> </LOMAttribute>
+    </ranker>
+    <teta> -142 </teta>
+  </hypothesis>
+  <alpha>0.05802824559481279</alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitylevel</name> </LOMAttribute>
+    </ranker>
+    <teta> -107 </teta>
+  </hypothesis>
+  <alpha>0.03612689931219408</alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitylevel</name> </LOMAttribute>
+    </ranker>
+    <teta> -2 </teta>
+  </hypothesis>
+  <alpha>0.31256072737214613</alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitylevel</name> </LOMAttribute>
+    </ranker>
+    <teta> -2 </teta>
+  </hypothesis>
+  <alpha>0.31256072737214613</alpha>
+</hypothesisAndAlpha>
+
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitytype</name> </LOMAttribute>
+    </ranker>
+    <teta> -167</teta>
+  </hypothesis>
+  <alpha>0.29762339506070773</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitytype</name> </LOMAttribute>
+    </ranker>
+    <teta> -164</teta>
+  </hypothesis>
+  <alpha>0.06821956140868732</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitytype</name> </LOMAttribute>
+    </ranker>
+    <teta> -154</teta>
+  </hypothesis>
+  <alpha>0.12633618010147085</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitytype</name> </LOMAttribute>
+    </ranker>
+    <teta> -120</teta>
+  </hypothesis>
+  <alpha>0.04899794177586224</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/interactivitytype</name> </LOMAttribute>
+    </ranker>
+    <teta> -3</teta>
+  </hypothesis>
+  <alpha>0.1627605622895452</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/learningresourcetype</name> </LOMAttribute>
+    </ranker>
+    <teta> -169</teta>
+  </hypothesis>
+  <alpha>0.6954242398596158</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/learningresourcetype</name> </LOMAttribute>
+    </ranker>
+    <teta> -128</teta>
+  </hypothesis>
+  <alpha>0.15364687957344686</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/learningresourcetype</name> </LOMAttribute>
+    </ranker>
+    <teta> -109</teta>
+  </hypothesis>
+  <alpha>0.07313053130770683</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/semanticdensity</name> </LOMAttribute>
+    </ranker>
+    <teta> -153</teta>
+  </hypothesis>
+  <alpha>0.23512501596960758</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/semanticdensity</name> </LOMAttribute>
+    </ranker>
+    <teta> -135</teta>
+  </hypothesis>
+  <alpha>0.02977996938594537</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/semanticdensity</name> </LOMAttribute>
+    </ranker>
+    <teta> -134</teta>
+  </hypothesis>
+  <alpha>0.022420683213161565</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/typicalagerange</name> </LOMAttribute>
+    </ranker>
+    <teta> -169</teta>
+  </hypothesis>
+  <alpha>1.1743982948687584</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>educational/typicalagerange</name> </LOMAttribute>
+    </ranker>
+    <teta> -5</teta>
+  </hypothesis>
+  <alpha>0.06977501476581006</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/aggregationlevel</name> </LOMAttribute>
+    </ranker>
+    <teta> -162</teta>
+  </hypothesis>
+  <alpha>0.23918921977859683</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/aggregationlevel</name> </LOMAttribute>
+    </ranker>
+    <teta> -156</teta>
+  </hypothesis>
+  <alpha>0.09871628844340231</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/coverage</name> </LOMAttribute>
+    </ranker>
+    <teta> -109</teta>
+  </hypothesis>
+  <alpha>0.05331038147144925</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -15</teta>
+  </hypothesis>
+  <alpha>0.03784521995468191</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -12</teta>
+  </hypothesis>
+  <alpha>0.30573130858993786</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -10</teta>
+  </hypothesis>
+  <alpha>0.04682933626227417</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -6</teta>
+  </hypothesis>
+  <alpha>0.052485177407331114</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/description</name> </LOMAttribute>
+    </ranker>
+    <teta> -3</teta>
+  </hypothesis>
+  <alpha>0.05283582300016869</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/language</name> </LOMAttribute>
+    </ranker>
+    <teta> -2</teta>
+  </hypothesis>
+  <alpha>0.028328405013854592</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/title</name> </LOMAttribute>
+    </ranker>
+    <teta> -71</teta>
+  </hypothesis>
+  <alpha>0.0026535733326410026</alpha>
+</hypothesisAndAlpha>
+<hypothesisAndAlpha>
+  <hypothesis> 
+    <class> lessonMapper.query.rankBoost.RankHypothesis </class>
+    <ranker>
+      <class> lessonMapper.query.rankBoost.SugLuceneRanker </class>
+      <LOMAttribute> <name>general/title</name> </LOMAttribute>
+    </ranker>
+    <teta> -35</teta>
+  </hypothesis>
+  <alpha>0.18115476858079047</alpha>
+</hypothesisAndAlpha>
+
+
+</RankBoostRanker>
+
+
