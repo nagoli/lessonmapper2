@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="**/.DS_Store|cormen/heap/" kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/piccolox.jar"/>
+	<classpathentry kind="lib" path="lib/piccolo.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-1.1.jar" sourcepath="/USERDISK/develop/commons-io-1.1-src/src"/>
+	<classpathentry kind="lib" path="lib/flanagan.jar"/>
+	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>
