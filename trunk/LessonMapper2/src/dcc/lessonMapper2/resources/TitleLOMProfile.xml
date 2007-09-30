@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- list of LOM attributes that lessonMapper 
+will display continuously 
+(in contrast with LOMProfile.xml defining available attributes to display).
+display order will match with list order 
+
+WARNING: Intersection of attributes between the TitleLOMProfile and LOMProfile
+			MUST be null
+
+
+-->
+<attributes>
+general/keyword
+general/description
+</attributes>
