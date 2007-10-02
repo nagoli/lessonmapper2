@@ -125,7 +125,9 @@ public class LOMAttributeTextUI extends LOMAttributeUI implements
 		final String theOldValue = itsNode.getText(), theNewValue = itsTextField.getText();
 		UndoManager.execute(new UndoableCommand(){
 			public void proceed() {
+				//System.out.println("value updated done");
 				itsNode.setText(theNewValue);
+				
 			}
 			public void undo() {
 				itsNode.setText(theOldValue);

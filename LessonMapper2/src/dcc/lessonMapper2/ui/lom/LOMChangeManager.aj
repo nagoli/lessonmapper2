@@ -321,9 +321,11 @@ public aspect LOMChangeManager implements PInputEventListener {
 				.getTarget();
 		LOM theLOM = theAttributeUI.getLOM();
 		LOMAttribute theAttribute = theAttributeUI.getLOMAttribute();
-		if (theLOM != null && theAttribute != null)
+		if (theLOM != null && theAttribute != null){
+			updateView(theLOM);
 			LessonMapper2.getInstance().giveToWorker(
 					new UpdateValueChange(theLOM, theAttribute));
+		}
 
 	}
 
@@ -338,7 +340,6 @@ public aspect LOMChangeManager implements PInputEventListener {
 		if (theRelation != null) {
 			LessonMapper2.getInstance().giveToWorker(
 					new UpdateNewRelation(theRelation));
-
 		}
 	}
 
@@ -351,7 +352,6 @@ public aspect LOMChangeManager implements PInputEventListener {
 	{
 		LessonMapper2.getInstance().giveToWorker(
 				new UpdateNewRelation(theRelation));
-
 	}
 
 	void around() : 

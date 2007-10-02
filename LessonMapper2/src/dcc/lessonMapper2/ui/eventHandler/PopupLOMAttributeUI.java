@@ -70,7 +70,7 @@ public class PopupLOMAttributeUI implements PInputEventListener{
 			LOMAttributeTextUI theTextUI = new LOMAttributeTextUI(aLOM,itsAttribute) ;
 			theTextUI.getTextField().addKeyListener(new KeyListener(){
 				public void keyPressed(KeyEvent aE) {
-					//System.out.println(aE);
+					// save the 
 					if (aE.getKeyCode() == KeyEvent.VK_ENTER){
 						aE.consume();
 						closePopup();
@@ -95,6 +95,7 @@ public class PopupLOMAttributeUI implements PInputEventListener{
 	}
 	
 	/* (non-Javadoc)
+	 * show popup on double click
 	 * @see edu.umd.cs.piccolo.event.PInputEventListener#processEvent(edu.umd.cs.piccolo.event.PInputEvent, int)
 	 */
 	public void processEvent(PInputEvent aEvent, int arg1) {
