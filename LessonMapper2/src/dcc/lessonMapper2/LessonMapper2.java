@@ -80,7 +80,7 @@ import edu.umd.cs.piccolo.PNode;
  */
 public class LessonMapper2 {
 
-	public static final String VERSION = "Version 1.0.0b";
+	public static final String VERSION = "Version 1.0.1b";
 
 	/** The ITS instance. */
 	protected static LessonMapper2 ITSInstance = new LessonMapper2();
